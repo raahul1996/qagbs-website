@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "QAGB — Quick Actuality Global Services",
     description: "Modern accounting & SaaS solutions for businesses worldwide.",
-    url: "https://qagb.com",
-    siteName: "QAGB",
+    url: "https://qagbs.com",
+    siteName: "QAGBS",
     type: "website",
   },
 };
