@@ -29,7 +29,7 @@ export default function About() {
             <div className="border-l-2 border-gray-600 pl-6">
               <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Vision</p>
               <p className="text-lg text-gray-200 leading-relaxed">
-                To be a trusted global partner in accounting, advisory, and business support services — recognised for delivering reliability, clarity, integrity, quality, and strategic insight.
+                To be a trusted global partner in accounting, advisory, and business support services, recognised for delivering reliability, clarity, integrity, quality, and strategic insight.
               </p>
             </div>
           </div>

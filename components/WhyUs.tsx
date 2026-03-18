@@ -15,13 +15,13 @@ const reasons = [
     number: "03",
     title: "Professional Excellence",
     description:
-      "Deep technical capabilities in accounting, financial reporting, taxation, audit, and advisory — backed by internationally recognised qualifications.",
+      "Deep technical capabilities in accounting, financial reporting, taxation, audit, and advisory, backed by internationally recognised qualifications.",
   },
   {
     number: "04",
     title: "Strategic Insight",
     description:
-      "Financial intelligence that goes beyond compliance — we translate data into clear, actionable insight to support key business decisions and growth.",
+      "Financial intelligence that goes beyond compliance. We translate data into clear, actionable insight to support key business decisions and growth.",
   },
   {
     number: "05",
@@ -33,7 +33,7 @@ const reasons = [
     number: "06",
     title: "International Standards",
     description:
-      "Full compliance with IFRS, GAAP, and local regulatory frameworks — ensuring your organisation meets its obligations wherever it operates.",
+      "Full compliance with IFRS, GAAP, and local regulatory frameworks, ensuring your organisation meets its obligations wherever it operates.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function WhyUs() {
             Why Choose QAGBS
           </h2>
           <p className="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
-            We are not just a service provider — we are a long-term partner committed to your financial clarity and business confidence.
+            We are not just a service provider. We are a long-term partner committed to your financial clarity and business confidence.
           </p>
         </div>
 

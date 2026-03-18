@@ -3,7 +3,7 @@ const partners = [
     name: "Mr. S. Vijayakumar",
     role: "Co-Founder & Finance Partner",
     credentials: ["M.Com", "PGDFM", "ACMA", "ACS", "LL.M", "EY IFRS Certified"],
-    bio: "A financial strategist with over three decades of comprehensive experience in financial management, strategic planning, and corporate governance. Vijayakumar has led global finance operations across the USA, UK, Netherlands, China, Hong Kong, Taiwan, and Japan — combining deep technical expertise with a self-starter mindset rooted in collaboration and process excellence.",
+    bio: "A financial strategist with over three decades of comprehensive experience in financial management, strategic planning, and corporate governance. Vijayakumar has led global finance operations across the USA, UK, Netherlands, China, Hong Kong, Taiwan, and Japan, combining deep technical expertise with a self-starter mindset rooted in collaboration and process excellence.",
     expertise: [
       "ERP implementation (Oracle)",
       "Direct & indirect tax assessments",
@@ -17,7 +17,7 @@ const partners = [
     name: "Mr. Srikanteswara M R",
     role: "Co-Founder & Head of Finance",
     credentials: ["Post Graduate in Commerce", "35+ Years Experience"],
-    bio: "A strategic finance leader with 35 years of excellence in financial management and corporate governance. Srikanteswara spent over a decade at Frauscher Sensor Technology India, where he was instrumental in growing the company from ₹120 million to ₹5,000 million — emerging as a market leader in the railway signalling sector. He is known for integrity, meticulous attention to detail, and a collaborative leadership style.",
+    bio: "A strategic finance leader with 35 years of excellence in financial management and corporate governance. Srikanteswara spent over a decade at Frauscher Sensor Technology India, where he was instrumental in growing the company from ₹120 million to ₹5,000 million, emerging as a market leader in the railway signalling sector. He is known for integrity, meticulous attention to detail, and a collaborative leadership style.",
     expertise: [
       "Internal audit (IFRS aligned)",
       "Cost & project accounting",

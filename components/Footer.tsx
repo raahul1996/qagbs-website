@@ -8,7 +8,7 @@ export default function Footer() {
             <p className="text-white font-bold text-base mb-3">QAGBS</p>
             <p className="text-sm leading-relaxed">
               Clarity in Finance.<br />Confidence in Growth.<br /><br />
-              Quick Acuity Global Business Solutions — global accounting, advisory, and business support services.
+              Quick Acuity Global Business Solutions, providing global accounting, advisory, and business support services.
             </p>
           </div>
 
@@ -55,11 +55,13 @@ export default function Footer() {
               <li>
                 <div className="text-gray-300 font-medium">Mr. S. Vijayakumar</div>
                 <a href="tel:+919700192091" className="hover:text-gray-200 transition-colors">+91 97001 92091</a>
+                <a href="mailto:vijay2k14@gmail.com" className="block hover:text-gray-200 transition-colors">vijay2k14@gmail.com</a>
                 <div className="text-gray-600 text-xs mt-0.5">Cardiff, United Kingdom</div>
               </li>
               <li>
                 <div className="text-gray-300 font-medium">Mr. Srikanteswara M R</div>
                 <a href="tel:+919686500446" className="hover:text-gray-200 transition-colors">+91 9686500446</a>
+                <a href="mailto:mrsrikanta3@gmail.com" className="block hover:text-gray-200 transition-colors">mrsrikanta3@gmail.com</a>
                 <div className="text-gray-600 text-xs mt-0.5">Bengaluru, India</div>
               </li>
             </ul>
