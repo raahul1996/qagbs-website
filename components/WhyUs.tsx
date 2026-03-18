@@ -1,65 +1,65 @@
 const reasons = [
   {
-    icon: "🏆",
-    title: "Proven Track Record",
+    number: "01",
+    title: "Global Perspective",
     description:
-      "A strong track record of delivering measurable results for clients across diverse industries and global markets.",
+      "Services designed for organisations operating across borders, with multi-jurisdictional expertise spanning the USA, UK, Europe, and Asia.",
   },
   {
-    icon: "🔐",
-    title: "Security & Compliance",
+    number: "02",
+    title: "Integrity & Transparency",
     description:
-      "Enterprise-grade security with full compliance to international standards including GDPR, SOC 2, and local regulations.",
+      "The highest ethical and professional standards in every engagement. Independence, accountability, and transparency guide every client relationship.",
   },
   {
-    icon: "⚡",
-    title: "Technology-First Approach",
+    number: "03",
+    title: "Professional Excellence",
     description:
-      "We leverage the latest cloud, AI, and automation technologies to keep your business ahead of the curve.",
+      "Deep technical capabilities in accounting, financial reporting, taxation, audit, and advisory — backed by internationally recognised qualifications.",
   },
   {
-    icon: "🤝",
-    title: "Dedicated Support",
+    number: "04",
+    title: "Strategic Insight",
     description:
-      "A dedicated account manager and 24/7 support team ensures you're never alone when you need us most.",
+      "Financial intelligence that goes beyond compliance — we translate data into clear, actionable insight to support key business decisions and growth.",
   },
   {
-    icon: "🌍",
-    title: "Global Reach",
+    number: "05",
+    title: "Trusted Partnership",
     description:
-      "Operating across multiple countries, we understand the nuances of international business and cross-border compliance.",
+      "A client-centric approach focused on long-term professional relationships built on measurable results and a genuine commitment to your success.",
   },
   {
-    icon: "💡",
-    title: "Tailored Solutions",
+    number: "06",
+    title: "International Standards",
     description:
-      "No one-size-fits-all. Every engagement is customized to your business model, industry, and growth stage.",
+      "Full compliance with IFRS, GAAP, and local regulatory frameworks — ensuring your organisation meets its obligations wherever it operates.",
   },
 ];
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="py-24 bg-blue-700 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="why-us" className="py-28 bg-[#1d1d1f] text-white">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-yellow-300 font-semibold text-sm uppercase tracking-widest">Why Choose Us</span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold mt-2">
-            The QAGBS Difference
+          <p className="text-sm font-medium text-gray-500 uppercase tracking-widest mb-3">Why QAGBS</p>
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
+            Why Choose QAGBS
           </h2>
-          <p className="text-blue-200 mt-4 max-w-2xl mx-auto">
-            We&apos;re not just a service provider — we&apos;re a long-term growth partner committed to your success.
+          <p className="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
+            We are not just a service provider — we are a long-term partner committed to your financial clarity and business confidence.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {reasons.map((reason) => (
             <div
-              key={reason.title}
-              className="bg-white/10 hover:bg-white/15 border border-white/10 rounded-2xl p-7 transition-colors"
+              key={reason.number}
+              className="bg-[#2d2d2f] rounded-2xl p-8 hover:bg-[#3a3a3c] transition-colors duration-200"
             >
-              <div className="text-4xl mb-4">{reason.icon}</div>
-              <h3 className="text-lg font-bold mb-2">{reason.title}</h3>
-              <p className="text-blue-200 text-sm leading-relaxed">{reason.description}</p>
+              <p className="text-4xl font-bold text-gray-700 mb-4">{reason.number}</p>
+              <h3 className="text-lg font-semibold text-white mb-3">{reason.title}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">{reason.description}</p>
             </div>
           ))}
         </div>

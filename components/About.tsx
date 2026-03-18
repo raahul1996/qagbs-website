@@ -1,48 +1,56 @@
+const values = [
+  { label: "Integrity" },
+  { label: "Professional Excellence" },
+  { label: "Global Perspective" },
+  { label: "Trust & Reliability" },
+  { label: "Strategic Insight" },
+];
+
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left: visual */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-12 text-white">
-              <div className="text-6xl font-extrabold mb-4 opacity-20">QAGB</div>
-              <div className="space-y-6">
-                <div className="bg-white/10 rounded-xl p-5">
-                  <div className="text-yellow-300 text-2xl font-bold">Our Mission</div>
-                  <p className="text-blue-100 mt-2 text-sm leading-relaxed">
-                    To empower businesses worldwide with intelligent financial tools and technology that drive growth and operational excellence.
-                  </p>
-                </div>
-                <div className="bg-white/10 rounded-xl p-5">
-                  <div className="text-yellow-300 text-2xl font-bold">Our Vision</div>
-                  <p className="text-blue-100 mt-2 text-sm leading-relaxed">
-                    To be the most trusted global partner for businesses seeking seamless integration of accounting expertise and modern technology.
-                  </p>
-                </div>
-              </div>
+    <section id="about" className="py-28 bg-[#1d1d1f] text-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <p className="text-sm font-medium text-gray-500 uppercase tracking-widest mb-3">About Us</p>
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
+            A Global Partner You Can Trust
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Mission & Vision */}
+          <div className="space-y-8">
+            <div className="border-l-2 border-gray-600 pl-6">
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Mission</p>
+              <p className="text-lg text-gray-200 leading-relaxed">
+                To provide high-quality professional services that strengthen financial transparency, enhance operational efficiency, and support informed decision-making for businesses across international markets.
+              </p>
             </div>
-            {/* Decorative dot */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20"></div>
+            <div className="border-l-2 border-gray-600 pl-6">
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Vision</p>
+              <p className="text-lg text-gray-200 leading-relaxed">
+                To be a trusted global partner in accounting, advisory, and business support services — recognised for delivering reliability, clarity, integrity, quality, and strategic insight.
+              </p>
+            </div>
           </div>
 
-          {/* Right: text */}
+          {/* About text + values */}
           <div>
-            <span className="text-blue-700 font-semibold text-sm uppercase tracking-widest">About QAGBS</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-6">
-              A Global Partner You Can Trust
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-5">
-              <strong>Quick Actuality Global Services (QAGBS)</strong> is a forward-thinking firm dedicated to providing
-              businesses with comprehensive accounting solutions and cutting-edge SaaS platforms. We combine deep
-              financial expertise with modern technology to deliver results that matter.
+            <p className="text-gray-400 leading-relaxed mb-6">
+              <strong className="text-white">Quick Acuity Global Business Solutions (QAGBS)</strong> is a global professional services firm providing integrated accounting, tax advisory, ERP implementation, and business support solutions to organisations operating in dynamic and competitive markets.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-8">
-              Founded on the principles of accuracy, transparency, and innovation, QAGBS serves clients across industries
-              and continents — from startups to enterprise organizations. Our multidisciplinary team brings together
-              certified accountants, software engineers, and business strategists to address your unique challenges.
+            <p className="text-gray-400 leading-relaxed mb-8">
+              We work with businesses, entrepreneurs, and institutions across industries to help them navigate financial complexity, strengthen governance, and unlock sustainable growth opportunities. Our approach combines deep technical expertise with a genuine commitment to long-term client success.
             </p>
 
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-4">Core Values</p>
+            <div className="flex flex-wrap gap-2">
+              {values.map((v) => (
+                <span key={v.label} className="bg-[#2d2d2f] text-gray-300 text-sm px-4 py-2 rounded-full">
+                  {v.label}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

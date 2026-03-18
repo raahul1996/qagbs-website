@@ -1,34 +1,38 @@
 export default function Hero() {
   return (
-    <section className="pt-32 pb-24 bg-gradient-to-br from-blue-700 via-blue-800 to-indigo-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span className="inline-block bg-blue-500/30 text-blue-100 text-sm font-medium px-4 py-1 rounded-full mb-6 tracking-wide uppercase">
-          Trusted Financial &amp; Technology Solutions
-        </span>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-          Empowering Businesses with<br />
-          <span className="text-yellow-300">Smart Accounting</span> &amp;{" "}
-          <span className="text-yellow-300">SaaS Solutions</span>
-        </h1>
-        <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto mb-10 leading-relaxed">
-          Quick Actuality Global Services delivers modern accounting services and cutting-edge SaaS
-          platforms that help businesses streamline operations, stay compliant, and scale with confidence.
+    <section className="min-h-screen bg-white flex flex-col items-center justify-center px-6 pt-14">
+      <div className="max-w-4xl mx-auto text-center">
+        <p className="text-sm font-medium text-gray-400 uppercase tracking-widest mb-6">
+          Quick Acuity Global Business Solutions
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+          Clarity in Finance.<br />
+          Confidence in Growth.
+        </h1>
+        <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+          Global accounting, advisory, and business support services for organisations navigating complexity, strengthening governance, and unlocking sustainable growth.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href="#contact"
-            className="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
+            className="bg-gray-900 text-white font-medium px-8 py-3 rounded-full text-base hover:bg-gray-700 transition-colors"
           >
-            Get Started Today
+            Contact Us
           </a>
           <a
             href="#services"
-            className="border-2 border-white/50 hover:border-white text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors"
+            className="text-gray-900 font-medium text-base flex items-center gap-1 hover:gap-2 transition-all"
           >
-            Explore Services
+            Explore Services <span aria-hidden="true">→</span>
           </a>
         </div>
+      </div>
 
+      {/* Subtle scroll indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-gray-300">
+        <svg className="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+        </svg>
       </div>
     </section>
   );

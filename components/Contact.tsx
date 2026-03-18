@@ -1,6 +1,23 @@
 "use client";
 import { useState } from "react";
 
+const contacts = [
+  {
+    name: "Mr. S. Vijayakumar",
+    role: "Co-Founder & Finance Partner",
+    phone: "+91 97001 92091",
+    phoneHref: "tel:+919700192091",
+    address: "17 Ordell Street, Cardiff CF24 2BA, United Kingdom",
+  },
+  {
+    name: "Mr. Srikanteswara M R",
+    role: "Co-Founder & Head of Finance",
+    phone: "+91 9686500446",
+    phoneHref: "tel:+919686500446",
+    address: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India",
+  },
+];
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -10,122 +27,110 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-28 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left: info */}
+          {/* Left */}
           <div>
-            <span className="text-blue-700 font-semibold text-sm uppercase tracking-widest">Get In Touch</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-6">
-              Ready to Transform Your Business?
+            <p className="text-sm font-medium text-gray-400 uppercase tracking-widest mb-3">Get In Touch</p>
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-4">
+              Let&apos;s Talk
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-10">
-              Whether you need accounting support, a SaaS solution, or strategic consulting — our team is ready to help.
-              Reach out and we&apos;ll respond within one business day.
+            <p className="text-lg text-gray-500 leading-relaxed mb-10">
+              Whether you need accounting support, tax advisory, ERP implementation, or compliance guidance — reach out and we&apos;ll respond within one business day.
             </p>
 
-            <div className="space-y-6">
-              {/* Vijay Kumar */}
-              <div className="flex items-start gap-4">
-                <div className="text-2xl">👤</div>
-                <div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest">Contact</div>
-                  <div className="text-gray-800 font-semibold">Mr. Vijay Kumar</div>
-                  <a href="tel:+919700192091" className="text-gray-700 hover:text-blue-700 transition-colors block">
-                    +91 97001 92091
+            <div className="space-y-5">
+              {contacts.map((c) => (
+                <div key={c.name} className="bg-[#f5f5f7] rounded-2xl p-6">
+                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">{c.role}</p>
+                  <p className="text-gray-900 font-semibold text-base mb-1">{c.name}</p>
+                  <a href={c.phoneHref} className="text-gray-700 hover:text-gray-900 transition-colors text-sm block mb-1">
+                    {c.phone}
                   </a>
-                  <div className="text-gray-600 text-sm mt-1">
-                    17 Ordell Street, Cardiff CF24 2BA
-                  </div>
+                  <p className="text-gray-500 text-sm">{c.address}</p>
                 </div>
-              </div>
-
-              {/* M R Srikanteswara */}
-              <div className="flex items-start gap-4">
-                <div className="text-2xl">👤</div>
-                <div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest">Contact</div>
-                  <div className="text-gray-800 font-semibold">M R Srikanteswara</div>
-                  <a href="tel:+919686500446" className="text-gray-700 hover:text-blue-700 transition-colors block">
-                    +91 9686500446
-                  </a>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
           {/* Right: form */}
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div>
             {submitted ? (
-              <div className="text-center py-12">
-                <div className="text-5xl mb-4">✅</div>
-                <h3 className="text-xl font-bold text-gray-900">Message Sent!</h3>
-                <p className="text-gray-500 mt-2">Thank you for reaching out. We&apos;ll be in touch within one business day.</p>
+              <div className="bg-[#f5f5f7] rounded-3xl p-12 text-center">
+                <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Message Sent</h3>
+                <p className="text-gray-500 mt-2 text-sm">Thank you for reaching out. We&apos;ll be in touch within one business day.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
                     <input
                       type="text"
                       required
-                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent transition-colors"
                       placeholder="John"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
                     <input
                       type="text"
                       required
-                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent transition-colors"
                       placeholder="Doe"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                   <input
                     type="email"
                     required
-                    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent transition-colors"
                     placeholder="john@company.com"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Company</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Company</label>
                   <input
                     type="text"
-                    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent transition-colors"
                     placeholder="Your company name"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Service Interested In</label>
-                  <select className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-600">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Service Interested In</label>
+                  <select className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent text-gray-600 transition-colors">
                     <option value="">Select a service...</option>
-                    <option>Accounting Solutions</option>
-                    <option>SaaS Solutions</option>
-                    <option>Business Consulting</option>
-                    <option>Payroll &amp; HR Tech</option>
-                    <option>Financial Analytics</option>
-                    <option>Global Services</option>
+                    <option>Global Accounting &amp; Bookkeeping</option>
+                    <option>Tax Advisory &amp; Compliance</option>
+                    <option>ERP Implementation Support</option>
+                    <option>Working Capital Management</option>
+                    <option>Compliance Advisory</option>
+                    <option>Internal Audit Services</option>
+                    <option>Tax Litigation Advisory</option>
                     <option>Other</option>
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                   <textarea
                     required
                     rows={4}
-                    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                    className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent resize-none transition-colors"
                     placeholder="Tell us about your business needs..."
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 rounded-lg transition-colors"
+                  className="w-full bg-gray-900 hover:bg-gray-700 text-white font-medium py-3 rounded-full transition-colors text-sm"
                 >
                   Send Message
                 </button>

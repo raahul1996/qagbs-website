@@ -5,13 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "QAGB — Quick Actuality Global Services",
+  title: "QAGBS — Quick Acuity Global Business Solutions",
   description:
-    "Quick Actuality Global Services (QAGBS) provides modern accounting solutions, SaaS platforms, and business consulting to help companies grow and scale globally.",
-  keywords: ["accounting", "SaaS", "business consulting", "QAGB", "financial solutions", "global services"],
+    "Quick Acuity Global Business Solutions (QAGBS) delivers global accounting, tax advisory, ERP implementation, and business support services. Clarity in Finance. Confidence in Growth.",
+  keywords: ["accounting", "tax advisory", "ERP implementation", "internal audit", "QAGBS", "global business solutions", "financial services", "compliance"],
   openGraph: {
-    title: "QAGB — Quick Actuality Global Services",
-    description: "Modern accounting & SaaS solutions for businesses worldwide.",
+    title: "QAGBS — Quick Acuity Global Business Solutions",
+    description: "Clarity in Finance. Confidence in Growth. Global accounting, advisory, and business support services.",
     url: "https://qagbs.com",
     siteName: "QAGBS",
     type: "website",
