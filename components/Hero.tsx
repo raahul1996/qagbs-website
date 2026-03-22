@@ -2,33 +2,46 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-[#0d2240]">
-      {/* Background image + overlay */}
+    <section id="home" className="relative min-h-screen flex items-center bg-slate-100">
+      {/* Background image — light library/office */}
       <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/hero-bg.jpg"
-          alt="Professional business team"
+          alt="Professional office with books"
           fill
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-[#0d2240]/68" />
+        {/* Light overlay so text is readable but background shows through */}
+        <div className="absolute inset-0 bg-white/55" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 pt-36">
-        <p className="text-blue-300 text-sm font-semibold uppercase tracking-widest mb-5">
-          Global Professional Services
-        </p>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl mb-5">
+        <p className="text-[#1a56db] text-sm font-semibold uppercase tracking-widest mb-6">
           Quick Acuity Global Business Solutions
-        </h1>
-        <p className="text-2xl sm:text-3xl font-light text-blue-200 italic mb-6">
-          Clarity in Accounting. Confidence in Growth.
         </p>
-        <p className="text-lg text-blue-100/80 max-w-2xl mb-10 leading-relaxed">
+
+        {/* Tagline — each phrase on its own line */}
+        <div className="mb-8 space-y-1">
+          <p className="text-5xl sm:text-6xl md:text-7xl font-black text-[#0d2240] leading-none tracking-tight">
+            Precision.
+          </p>
+          <p className="text-5xl sm:text-6xl md:text-7xl font-black text-[#1a56db] leading-none tracking-tight">
+            Intelligence.
+          </p>
+          <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0d2240] leading-snug">
+            Global Advantage.
+          </p>
+          <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-600 leading-snug">
+            Enduring Boundless Impact.
+          </p>
+        </div>
+
+        <p className="text-lg text-slate-600 max-w-2xl mb-10 leading-relaxed">
           Global accounting, advisory, and business support services designed to help organizations navigate complexity, strengthen governance, and unlock sustainable growth.
         </p>
+
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="#services"
@@ -38,7 +51,7 @@ export default function Hero() {
           </a>
           <a
             href="#contact"
-            className="border-2 border-white/50 hover:border-white text-white font-semibold px-8 py-3.5 rounded-full text-base transition-colors text-center"
+            className="border-2 border-[#0d2240]/50 hover:border-[#0d2240] text-[#0d2240] font-semibold px-8 py-3.5 rounded-full text-base transition-colors text-center"
           >
             Partner With Us
           </a>
@@ -46,7 +59,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/40">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-[#0d2240]/30">
         <svg className="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
         </svg>
