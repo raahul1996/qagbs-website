@@ -3,8 +3,16 @@ import { useState } from "react";
 
 const contacts = [
   {
+    name: "Mr. Scott Wells, CFA",
+    role: "Co-Founder",
+    phone: "(480) 215-1025",
+    phoneHref: "tel:+14802151025",
+    email: "scottwellscfa@gmail.com",
+    address: "Los Angeles, CA, United States",
+  },
+  {
     name: "Mr. S. Vijayakumar",
-    role: "Co-Founder & Finance Partner",
+    role: "Co-Founder",
     phone: "+91 97001 92091",
     phoneHref: "tel:+919700192091",
     email: "vijay2k14@gmail.com",
@@ -12,7 +20,7 @@ const contacts = [
   },
   {
     name: "Mr. Srikanteswara M R",
-    role: "Co-Founder & Head of Finance",
+    role: "Co-Founder",
     phone: "+91 9686500446",
     phoneHref: "tel:+919686500446",
     email: "mrsrikanta3@gmail.com",
