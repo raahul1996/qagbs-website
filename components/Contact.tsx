@@ -61,7 +61,7 @@ export default function Contact() {
     }
   }
 
-  const inputClass = "w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#1a56db] focus:ring-1 focus:ring-[#1a56db] bg-white transition-colors";
+  const inputClass = "w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#1a56db] focus:ring-1 focus:ring-[#1a56db] bg-white transition-colors";
 
   return (
     <section id="contact" className="py-24 bg-[#eff6ff]">
