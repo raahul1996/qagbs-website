@@ -35,14 +35,10 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0d2240] shadow-lg">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
-        <button onClick={() => scrollTo("home")} className="flex items-center gap-3 focus:outline-none">
-          <Image src="/logo.png" alt="QAGBS Logo" width={40} height={40} className="rounded-full flex-shrink-0" />
-          <div className="text-left">
-            <div className="text-white font-bold text-sm leading-none tracking-wide">QAGBS</div>
-            <div className="hidden sm:block text-blue-300 text-xs font-normal leading-none mt-0.5">Quick Acuity Global Business Solutions</div>
-          </div>
+        <button onClick={() => scrollTo("home")} className="flex items-center focus:outline-none">
+          <Image src="/logo.png" alt="QAGBS Logo" width={160} height={70} className="object-contain flex-shrink-0" style={{maxHeight: '70px', width: 'auto'}} />
         </button>
 
         {/* Desktop tabs */}
