@@ -1,46 +1,75 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+
+const tabs = [
+  { label: "Home", id: "home" },
+  { label: "Services", id: "services" },
+  { label: "About", id: "about" },
+  { label: "Leadership", id: "leadership" },
+  { label: "Contact", id: "contact" },
+];
 
 export default function Navbar() {
+  const [active, setActive] = useState("home");
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+      let current = "home";
+      for (const { id } of tabs) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= 80) current = id;
+      }
+      setActive(current);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Team", href: "#team" },
-    { label: "Contact", href: "#contact" },
-  ];
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
+  };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 transition-shadow duration-200 ${scrolled ? "shadow-sm" : ""}`}>
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0d2240] shadow-lg">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-baseline gap-2">
-          <span className="text-base font-bold text-gray-900 tracking-tight">QAGBS</span>
-          <span className="hidden sm:block text-xs text-gray-400 font-normal">Quick Acuity Global Business Solutions</span>
-        </a>
+        <button onClick={() => scrollTo("home")} className="flex items-center gap-3 focus:outline-none">
+          <Image src="/logo.png" alt="QAGBS Logo" width={40} height={40} className="rounded-full flex-shrink-0" />
+          <div className="text-left">
+            <div className="text-white font-bold text-sm leading-none tracking-wide">QAGBS</div>
+            <div className="hidden sm:block text-blue-300 text-xs font-normal leading-none mt-0.5">Quick Acuity Global Business Solutions</div>
+          </div>
+        </button>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {links.map((link) => (
-            <a key={link.href} href={link.href} className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-              {link.label}
-            </a>
+        {/* Desktop tabs */}
+        <div className="hidden md:flex items-center gap-1">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => scrollTo(tab.id)}
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                active === tab.id
+                  ? "text-white bg-white/10 border-b-2 border-blue-400"
+                  : "text-blue-200 hover:text-white hover:bg-white/10"
+              }`}
+            >
+              {tab.label}
+            </button>
           ))}
-          <a href="#contact" className="text-sm bg-gray-900 text-white px-4 py-1.5 rounded-full hover:bg-gray-700 transition-colors">
+          <button
+            onClick={() => scrollTo("contact")}
+            className="ml-3 bg-[#1a56db] hover:bg-blue-500 text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors"
+          >
             Get in Touch
-          </a>
+          </button>
         </div>
 
         {/* Mobile hamburger */}
-        <button className="md:hidden p-2 text-gray-600" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <button className="md:hidden p-2 text-blue-200" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {open ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
@@ -53,15 +82,24 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
-          {links.map((link) => (
-            <a key={link.href} href={link.href} className="text-sm text-gray-600 hover:text-gray-900" onClick={() => setOpen(false)}>
-              {link.label}
-            </a>
+        <div className="md:hidden bg-[#0d2240] border-t border-white/10 px-6 py-4 flex flex-col gap-2">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => scrollTo(tab.id)}
+              className={`text-left px-3 py-2 text-sm rounded-md ${
+                active === tab.id ? "text-white font-semibold bg-white/10" : "text-blue-200"
+              }`}
+            >
+              {tab.label}
+            </button>
           ))}
-          <a href="#contact" className="text-sm bg-gray-900 text-white px-4 py-2 rounded-full text-center" onClick={() => setOpen(false)}>
+          <button
+            onClick={() => scrollTo("contact")}
+            className="mt-2 bg-[#1a56db] text-white text-sm font-medium px-4 py-2 rounded-full text-center"
+          >
             Get in Touch
-          </a>
+          </button>
         </div>
       )}
     </nav>

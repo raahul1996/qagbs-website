@@ -29,7 +29,6 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     setError("");
-
     const form = e.currentTarget;
     const data = {
       firstName: (form.elements.namedItem("firstName") as HTMLInputElement).value,
@@ -39,19 +38,14 @@ export default function Contact() {
       service: (form.elements.namedItem("service") as HTMLSelectElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
     };
-
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-
-      if (res.ok) {
-        setSubmitted(true);
-      } else {
-        setError("Something went wrong. Please try again or contact us directly.");
-      }
+      if (res.ok) setSubmitted(true);
+      else setError("Something went wrong. Please try again or contact us directly.");
     } catch {
       setError("Something went wrong. Please try again or contact us directly.");
     } finally {
@@ -59,121 +53,108 @@ export default function Contact() {
     }
   }
 
-  return (
-    <section id="contact" className="py-28 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left */}
-          <div>
-            <p className="text-sm font-medium text-gray-400 uppercase tracking-widest mb-3">Get In Touch</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-4">
-              Let&apos;s Talk
-            </h2>
-            <p className="text-lg text-gray-500 leading-relaxed mb-10">
-              Whether you need accounting support, tax advisory, ERP implementation, or compliance guidance, reach out and we&apos;ll respond within one business day.
-            </p>
+  const inputClass = "w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#1a56db] focus:ring-1 focus:ring-[#1a56db] bg-white transition-colors";
 
-            <div className="space-y-5">
-              {contacts.map((c) => (
-                <div key={c.name} className="bg-[#f5f5f7] rounded-2xl p-6">
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">{c.role}</p>
-                  <p className="text-gray-900 font-semibold text-base mb-1">{c.name}</p>
-                  <a href={c.phoneHref} className="text-gray-700 hover:text-gray-900 transition-colors text-sm block mb-1">
+  return (
+    <section id="contact" className="py-24 bg-[#eff6ff]">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-14">
+          <p className="text-[#1a56db] text-sm font-semibold uppercase tracking-widest mb-3">Get In Touch</p>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0d2240] tracking-tight">
+            Let&apos;s Talk
+          </h2>
+          <p className="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">
+            Whether you need accounting support, tax advisory, ERP implementation, or compliance guidance, reach out and we will respond within one business day.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          {/* Contact cards */}
+          <div className="space-y-5">
+            {contacts.map((c) => (
+              <div key={c.name} className="bg-white border border-blue-100 rounded-2xl p-6 shadow-sm">
+                <p className="text-xs font-bold text-[#1a56db] uppercase tracking-widest mb-2">{c.role}</p>
+                <p className="text-[#0d2240] font-bold text-base mb-3">{c.name}</p>
+                <div className="space-y-2">
+                  <a href={c.phoneHref} className="flex items-center gap-2 text-slate-600 hover:text-[#1a56db] transition-colors text-sm">
+                    <svg className="w-4 h-4 text-[#1a56db]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
                     {c.phone}
                   </a>
-                  <a href={`mailto:${c.email}`} className="text-gray-700 hover:text-gray-900 transition-colors text-sm block mb-1">
+                  <a href={`mailto:${c.email}`} className="flex items-center gap-2 text-slate-600 hover:text-[#1a56db] transition-colors text-sm">
+                    <svg className="w-4 h-4 text-[#1a56db]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
                     {c.email}
                   </a>
-                  <p className="text-gray-500 text-sm">{c.address}</p>
+                  <p className="flex items-start gap-2 text-slate-500 text-sm">
+                    <svg className="w-4 h-4 text-[#1a56db] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    {c.address}
+                  </p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
-          {/* Right: form */}
-          <div>
+          {/* Form */}
+          <div className="bg-white border border-blue-100 rounded-2xl p-8 shadow-sm">
             {submitted ? (
-              <div className="bg-[#f5f5f7] rounded-3xl p-12 text-center">
-                <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="text-center py-10">
+                <div className="w-14 h-14 bg-[#1a56db] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Message Sent</h3>
-                <p className="text-gray-500 mt-2 text-sm">Thank you for reaching out. We&apos;ll be in touch within one business day.</p>
+                <h3 className="text-xl font-bold text-[#0d2240]">Message Sent</h3>
+                <p className="text-slate-500 mt-2 text-sm">Thank you for reaching out. We will be in touch within one business day.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-                    <input
-                      name="firstName"
-                      type="text"
-                      required
-                      className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent transition-colors"
-                      placeholder="John"
-                    />
+                    <label className="block text-sm font-medium text-slate-700 mb-1.5">First Name</label>
+                    <input name="firstName" type="text" required className={inputClass} placeholder="John" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-                    <input
-                      name="lastName"
-                      type="text"
-                      required
-                      className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent transition-colors"
-                      placeholder="Doe"
-                    />
+                    <label className="block text-sm font-medium text-slate-700 mb-1.5">Last Name</label>
+                    <input name="lastName" type="text" required className={inputClass} placeholder="Doe" />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input
-                    name="email"
-                    type="email"
-                    required
-                    className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent transition-colors"
-                    placeholder="john@company.com"
-                  />
+                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Email</label>
+                  <input name="email" type="email" required className={inputClass} placeholder="john@company.com" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Company</label>
-                  <input
-                    name="company"
-                    type="text"
-                    className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent transition-colors"
-                    placeholder="Your company name"
-                  />
+                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Company</label>
+                  <input name="company" type="text" className={inputClass} placeholder="Your company name" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Service Interested In</label>
-                  <select name="service" className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent text-gray-600 transition-colors">
+                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Service Interested In</label>
+                  <select name="service" className={inputClass + " text-slate-600"}>
                     <option value="">Select a service...</option>
                     <option>Global Accounting &amp; Bookkeeping</option>
-                    <option>Tax Advisory &amp; Compliance</option>
+                    <option>Tax Advisory &amp; Cross Border Transactions</option>
                     <option>ERP Implementation Support</option>
-                    <option>Working Capital Management</option>
-                    <option>Compliance Advisory</option>
+                    <option>Working Capital Advisory Management</option>
+                    <option>Compliance Advisory Services</option>
                     <option>Internal Audit Services</option>
-                    <option>Tax Litigation Advisory</option>
-                    <option>Other</option>
+                    <option>Tax Litigation Advisory Support</option>
+                    <option>Other Professional Services</option>
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                  <textarea
-                    name="message"
-                    required
-                    rows={4}
-                    className="w-full border-b border-gray-300 pb-2 text-sm focus:outline-none focus:border-gray-900 bg-transparent resize-none transition-colors"
-                    placeholder="Tell us about your business needs..."
-                  />
+                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Message</label>
+                  <textarea name="message" required rows={4} className={inputClass + " resize-none"} placeholder="Tell us about your business needs..." />
                 </div>
                 {error && <p className="text-red-500 text-sm">{error}</p>}
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-gray-900 hover:bg-gray-700 disabled:bg-gray-400 text-white font-medium py-3 rounded-full transition-colors text-sm"
+                  className="w-full bg-[#1a56db] hover:bg-blue-500 disabled:bg-blue-300 text-white font-semibold py-3 rounded-full transition-colors text-sm"
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
