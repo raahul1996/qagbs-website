@@ -24,7 +24,7 @@ export default function Hero() {
           Quick Acuity Global Business Solutions
         </h1>
         <p className="text-2xl sm:text-3xl font-light text-blue-200 italic mb-6">
-          Clarity in Finance. Confidence in Growth.
+          Clarity in Accounting. Confidence in Growth.
         </p>
         <p className="text-lg text-blue-100/80 max-w-2xl mb-10 leading-relaxed">
           Global accounting, advisory, and business support services designed to help organizations navigate complexity, strengthen governance, and unlock sustainable growth.

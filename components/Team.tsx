@@ -24,7 +24,7 @@ function Avatar({ src, name, initials }: { src: string; name: string; initials: 
 const leaders = [
   {
     name: "Mr. Scott Wells, CFA",
-    role: "Senior Financial Executive",
+    role: "Co-Founder",
     title: "Managing Partner, G&O Consulting | Managing Director, Minerva Valuations",
     initials: "SW",
     photo: "/team/scott-wells.jpg",
@@ -35,7 +35,7 @@ const leaders = [
   },
   {
     name: "Mr. S. Vijayakumar",
-    role: "Co-Founder & Finance Partner",
+    role: "Co-Founder",
     title: "M.Com | PGDFM | ACMA | ACS | LL.M | EY IFRS Certified",
     initials: "VK",
     photo: "/team/vijay-kumar.jpg",
@@ -46,7 +46,7 @@ const leaders = [
   },
   {
     name: "Mr. Srikanteswara M R",
-    role: "Co-Founder & Head of Finance",
+    role: "Co-Founder",
     title: "Post Graduate in Commerce | 35+ Years Experience",
     initials: "SR",
     photo: "/team/srikanteswara.jpg",

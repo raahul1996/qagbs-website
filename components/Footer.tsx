@@ -10,7 +10,7 @@ export default function Footer() {
               <p className="text-white font-bold text-base">QAGBS</p>
             </div>
             <p className="text-sm leading-relaxed text-blue-300">
-              Clarity in Finance. Confidence in Growth.
+              Clarity in Accounting. Confidence in Growth.
               <br /><br />
               Quick Acuity Global Business Solutions, providing global accounting, advisory, and business support services.
             </p>
