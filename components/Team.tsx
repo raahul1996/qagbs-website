@@ -50,7 +50,7 @@ He brings rigorous perspective to regulatory compliance and taxation, having suc
 
 Most recently, he served as Associate Vice President of Finance at Brane Enterprises and as Senior Director of Global Finance at Imaging Endpoints, managing operations across the USA, UK, Netherlands, China, Hong Kong, Taiwan, and Japan.`,
     expertise: ["ERP Implementation (Oracle)", "Direct & Indirect Tax", "Transfer Pricing & FEMA", "Working Capital Management", "Internal Controls & SOPs"],
-    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "Bengaluru, India" },
+    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India" },
   },
   {
     name: "Mr. Srikanteswara M R",
@@ -106,7 +106,6 @@ export default function Team() {
                 alt="Strategic leadership"
                 fill
                 className="object-cover object-center"
-                style={{ filter: "brightness(1.6) contrast(0.85)" }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#eff6ff] via-transparent to-transparent" />
             </div>

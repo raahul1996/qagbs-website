@@ -29,42 +29,6 @@ const coreValues = [
   },
 ];
 
-const serviceDetails = [
-  {
-    title: "Global Accounting & Bookkeeping Services",
-    subtitle: "International Accounting and Cost Accounting Support Services",
-    desc: "We provide end-to-end accounting and bookkeeping solutions designed to support businesses operating in multiple jurisdictions. Our services ensure accurate recording of financial transactions, maintenance of compliant accounting records, and timely financial information that enables effective decision-making. By leveraging modern accounting systems and global best practices, we help organizations maintain transparency, efficiency, and financial discipline.\n\nDiligent balance sheet reconciliations confirm that each asset and liability is recorded properly. Our structured approach ensures any errors or omissions are identified early to maintain an accurate picture of the company's financial position.\n\nWe additionally provide specialized accounting and cost accounting support services for companies operating globally or expanding into international markets. Our team assists with cross-border accounting coordination, financial and cost analysis support, and alignment with international accounting practices to ensure seamless financial and cost management across jurisdictions.",
-  },
-  {
-    title: "Tax Advisory & Compliance Services",
-    desc: "We provide comprehensive tax advisory and compliance support to help businesses manage their tax obligations efficiently. Our services include tax planning, compliance filings, regulatory guidance, and advisory on cross-border taxation matters. Our objective is to help clients navigate complex tax frameworks while optimizing tax efficiency and ensuring full compliance with applicable laws.",
-  },
-  {
-    title: "Support for ERP Implementation",
-    desc: "Enterprise Resource Planning (ERP) implementation is the process of configuring and deploying integrated software systems that unify core business functions such as finance, inventory, costing, procurement, manufacturing, sales, human resources, and compliance within a single digital platform. We approach ERP implementation from a finance-first perspective, ensuring every system decision directly contributes to improved profitability, operational control, and long-term business value. A successful implementation not only aligns technology with business strategy but also streamlines operations, enhances scalability, and ensures regulatory compliance.",
-  },
-  {
-    title: "Working Capital Management Advisory Services",
-    desc: "Working Capital Management Services involves providing data analysis and early warning to help maintain required liquidity. It means ensuring you avoid surprises and have seamless cash flow for every business need. We identify and resolve bottlenecks in working capital cycles, targeting leakages and blockages. By accelerating cash velocity, optimizing internal processes for receivables and payables, and maintaining inventory discipline, we ensure quicker turnaround and sustained financial health.",
-  },
-  {
-    title: "Compliance Advisory Services",
-    desc: "Operating in multiple regulatory environments requires structured compliance management. We assist organizations in understanding and meeting their statutory, financial, and governance obligations. Our compliance advisory services help businesses maintain regulatory alignment while minimizing operational and legal risks.",
-  },
-  {
-    title: "Internal Audit Services",
-    desc: "We provide independent internal audit services to help organizations strengthen internal controls, manage operational risks, and improve governance. Our risk-based audit approach evaluates financial processes, compliance systems, and operational efficiency to identify gaps and recommend practical improvements. We offer high-quality, cost-efficient internal audit support aligned with international auditing standards for global clients.",
-  },
-  {
-    title: "Tax Litigation Advisory Support",
-    desc: "Our services include providing technical research, preparation of documents, analysis of tax positions, and keeping in view leverages on international taxation with a cost-efficient delivery model.",
-  },
-  {
-    title: "Other Professional Services",
-    desc: "In addition to the services outlined above, the firm may undertake other lawful professional and advisory services as may be determined by the partners from time to time, consistent with the firm's expertise and the evolving needs of its clients.",
-  },
-];
-
 const industries = [
   "Technology & Digital Services",
   "Professional Services",
@@ -151,44 +115,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* 4. Services Overview with full descriptions */}
-      <div className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <p className="text-[#1a56db] text-sm font-semibold uppercase tracking-widest mb-3">What We Do</p>
-            <h2 className="text-4xl font-extrabold text-[#0d2240]">Services Overview</h2>
-          </div>
-
-          {/* Quick list */}
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-14">
-            {serviceDetails.map((s) => (
-              <li key={s.title} className="flex items-start gap-2 text-slate-700 text-sm">
-                <svg className="w-4 h-4 text-[#1a56db] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                {s.title}{s.subtitle ? ` — ${s.subtitle}` : ""}
-              </li>
-            ))}
-          </ul>
-
-          {/* Detailed descriptions */}
-          <div className="space-y-10">
-            {serviceDetails.map((s) => (
-              <div key={s.title} className="border-l-4 border-[#1a56db] pl-6">
-                <h3 className="text-[#0d2240] font-bold text-lg mb-1">{s.title}</h3>
-                {s.subtitle && <p className="text-[#1a56db] text-sm font-medium mb-3">{s.subtitle}</p>}
-                <div className="text-slate-600 text-base leading-relaxed space-y-3">
-                  {s.desc.split("\n\n").map((para, i) => (
-                    <p key={i}>{para}</p>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* 5. Industries We Support */}
+      {/* 4. Industries We Support */}
       <div className="py-16 bg-[#eff6ff]">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-[#1a56db] text-sm font-semibold uppercase tracking-widest mb-3">Sectors</p>
@@ -203,7 +130,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* 6. Meet The Team intro */}
+      {/* 5. Meet The Team intro */}
       <div className="py-16 bg-[#0d2240]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-blue-400 text-sm font-semibold uppercase tracking-widest mb-3">Our People</p>
