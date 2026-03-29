@@ -7,23 +7,23 @@ const contacts = [
     role: "Co-Founder",
     phone: "(480) 215-1025",
     phoneHref: "tel:+14802151025",
-    email: "scottwellscfa@gmail.com",
+    email: "scott@qagbs.com",
     address: "Los Angeles, CA, United States",
   },
   {
     name: "Mr. S. Vijayakumar",
     role: "Co-Founder",
-    phone: "+91 97001 92091",
-    phoneHref: "tel:+919700192091",
-    email: "vijay2k14@gmail.com",
-    address: "17 Ordell Street, Cardiff CF24 2BA, United Kingdom",
+    phone: "+91 9663546561",
+    phoneHref: "tel:+919663546561",
+    email: "vijay@qagbs.com",
+    address: "Bengaluru, India",
   },
   {
     name: "Mr. Srikanteswara M R",
     role: "Co-Founder",
-    phone: "+91 9686500446",
-    phoneHref: "tel:+919686500446",
-    email: "mrsrikanta3@gmail.com",
+    phone: "+91 9535734505",
+    phoneHref: "tel:+919535734505",
+    email: "sri@qagbs.com",
     address: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India",
   },
 ];
@@ -69,10 +69,10 @@ export default function Contact() {
         <div className="text-center mb-14">
           <p className="text-[#1a56db] text-sm font-semibold uppercase tracking-widest mb-3">Get In Touch</p>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0d2240] tracking-tight">
-            Let&apos;s Talk
+            Let us get in touch
           </h2>
           <p className="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">
-            Whether you need accounting support, tax advisory, ERP implementation, or compliance guidance, reach out and we will respond within one business day.
+            Global accounting, Tax, advisory, and whether you need accounting support, ERP implementation, or compliance guidance, reach out and we will respond within one business day.
           </p>
         </div>
 

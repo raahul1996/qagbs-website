@@ -5,7 +5,7 @@ const coreValues = [
   },
   {
     title: "Professional Expertise",
-    desc: "Strong technical capabilities in accounting, financial reporting, tax, and advisory services backed by decades of combined experience.",
+    desc: "Strong technical capabilities in accounting, financial reporting, tax, advisory services backed by many decades of combined experience.",
   },
   {
     title: "Strategic Insight",
@@ -21,7 +21,7 @@ const coreValues = [
   },
   {
     title: "Built-In Business Continuity",
-    desc: "Structured processes and trained backup support minimize risk from turnover or absence, ensuring your deadlines are always met.",
+    desc: "Developed a pool of cross-trained backup professionals to mitigate risks arising from employee turnover or absences, ensuring uninterrupted operations and consistent adherence to deadlines.",
   },
   {
     title: "Global Perspective",
@@ -90,19 +90,19 @@ export default function About() {
           </div>
 
           <div className="prose prose-lg max-w-none text-slate-700 space-y-5">
-            <p>
+            <p className="text-justify">
               <strong className="text-[#0d2240]">QUICK ACUITY GLOBAL BUSINESS SOLUTIONS</strong> is a global professional services firm providing integrated accounting, cost accounting, advisory, and business support solutions to organizations operating in dynamic and competitive markets.
             </p>
-            <p>
+            <p className="text-justify">
               We work with businesses, entrepreneurs, and institutions across industries to help them navigate financial complexity, strengthen governance, and unlock sustainable growth opportunities. Our firm combines deep professional expertise with a practical understanding of international business environments, enabling clients to make informed decisions with confidence.
             </p>
-            <p>
+            <p className="text-justify">
               Our approach is built on five core principles: <strong>Trust, Reliability, Integrity, Quality, and Strategic Insight.</strong> We believe financial information should not only ensure compliance but also serve as a powerful tool for business intelligence and strategic planning with expectation of all stakeholders. By integrating accounting expertise, analytical capabilities, and advisory insight, we support organizations in transforming financial data into meaningful value for all stakeholders.
             </p>
-            <p>
+            <p className="text-justify">
               Operating with a global outlook, our team delivers services that align with international standards while remaining responsive to the specific needs of each client. Whether supporting established enterprises, emerging businesses, or international investors, we focus on building long-term professional relationships grounded in trust, reliability, and measurable results.
             </p>
-            <p>
+            <p className="text-justify">
               At <strong className="text-[#0d2240]">QUICK ACUITY GLOBAL BUSINESS SOLUTIONS</strong>, our objective is <strong>to provide professional support that enables successful businesses to grow with value and wealth in an increasingly complex global economy.</strong>
             </p>
           </div>
@@ -117,13 +117,13 @@ export default function About() {
             <h2 className="text-3xl font-extrabold text-[#0d2240] mb-8">Our Vision</h2>
           </div>
           <div className="border-l-4 border-[#1a56db] pl-8 space-y-5 text-slate-700 text-lg leading-relaxed">
-            <p className="italic font-medium text-[#0d2240]">
+            <p className="italic font-medium text-[#0d2240] text-justify">
               &ldquo;To be a globally respected and trusted partner in accounting, tax, advisory, and business support services — built on a strong foundation of over two decades of professional excellence, and committed to shaping through innovation, integrity, and strategic foresight.
             </p>
-            <p>
+            <p className="text-justify">
               We aspire to deliver unmatched reliability, clarity, and quality, while providing deep tax and regulatory expertise, enabling our clients to navigate global complexities with confidence.
             </p>
-            <p className="italic font-medium text-[#0d2240]">
+            <p className="italic font-medium text-[#0d2240] text-justify">
               Our vision is to create enduring value for all stakeholders — clients, people, partners, and society — by fostering trust, driving sustainable growth, and setting new benchmarks in professional services across the global marketplace.&rdquo;
             </p>
           </div>

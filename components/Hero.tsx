@@ -18,28 +18,28 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 pt-36">
-        <p className="text-5xl sm:text-6xl md:text-7xl font-black text-[#1a56db] leading-none tracking-tight mb-4">
+        <p className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1a56db] leading-tight tracking-tight mb-4 whitespace-nowrap">
           Quick Acuity Global Business Solutions
         </p>
 
         {/* Tagline — each phrase on its own line */}
         <div className="mb-8 space-y-1">
           <p className="text-5xl sm:text-6xl md:text-7xl font-black text-[#0d2240] leading-none tracking-tight">
-            Precision.
+            Precision
           </p>
           <p className="text-5xl sm:text-6xl md:text-7xl font-black text-[#1a56db] leading-none tracking-tight">
-            Intelligence.
+            Intelligence
           </p>
           <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0d2240] leading-snug">
-            Global Advantage.
+            Global Advantage
           </p>
           <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-600 leading-snug">
-            Enduring Boundless Impact.
+            Enduring Boundless Impact
           </p>
         </div>
 
-        <p className="text-lg text-slate-600 max-w-2xl mb-10 leading-relaxed">
-          Global accounting, advisory, and business support services designed to help organizations navigate complexity, strengthen governance, and unlock sustainable growth.
+        <p className="text-lg text-[#1a56db] max-w-2xl mb-10 leading-relaxed">
+          Global accounting, Tax, advisory, and business support services designed to help organizations navigate complexity, strengthen governance, and unlock sustainable growth.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">

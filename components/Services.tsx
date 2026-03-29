@@ -63,49 +63,49 @@ const services = [
     title: "Global Accounting & Bookkeeping",
     subtitle: "International Accounting & Cost Accounting Support",
     Icon: AccountingIcon,
-    detail: "We provide end-to-end accounting and bookkeeping solutions for businesses operating across multiple jurisdictions. Our services ensure accurate recording of financial transactions, compliant accounting records, and timely financial information for effective decision-making. We also provide specialized cost accounting support and cross-border accounting coordination aligned with international accounting practices.",
+    detail: "We provide end-to-end accounting and bookkeeping solutions designed to support businesses operating in multiple jurisdictions. Our services ensure accurate recording of financial transactions, maintenance of compliant accounting records, and timely financial information that enables effective decision-making. By leveraging modern accounting systems and global best practices, we help organizations maintain transparency, efficiency, and financial discipline.\n\nDiligent balance sheet reconciliations confirm that each asset and liability is recorded properly. Our structured approach ensures any errors or omissions are identified early to maintain an accurate picture of the company's financial position.\n\nWe additionally provide specialized accounting and cost accounting support services for companies operating globally or expanding into international markets. Our team assists with cross-border accounting coordination, financial and cost analysis support, and alignment with international accounting practices to ensure seamless financial and cost management across jurisdictions.",
   },
   {
     title: "Tax Advisory & Cross Border Transactions",
     subtitle: "Planning, Compliance & Regulatory Guidance",
     Icon: TaxIcon,
-    detail: "We provide comprehensive tax advisory and compliance support to help businesses manage their tax obligations efficiently. Our services include tax planning, compliance filings, regulatory guidance, and advisory on cross-border taxation matters — helping clients navigate complex tax frameworks while optimizing tax efficiency and ensuring full compliance.",
+    detail: "We provide comprehensive tax advisory and compliance support to help businesses manage their tax obligations efficiently. Our services include tax planning, compliance filings, regulatory guidance, and advisory on cross-border taxation matters. Our objective is to help clients navigate complex tax frameworks while optimizing tax efficiency and ensuring full compliance with applicable laws.",
   },
   {
     title: "Support for ERP Implementation",
     subtitle: "Finance-First System Integration & Deployment",
     Icon: ErpIcon,
-    detail: "We approach ERP implementation from a finance-first perspective, ensuring every system decision contributes to improved profitability, operational control, and long-term business value. We help unify core business functions — finance, inventory, costing, procurement, manufacturing, sales, HR, and compliance — within a single integrated digital platform.",
+    detail: "Enterprise Resource Planning (ERP) implementation is the process of configuring and deploying integrated software systems that unify core business functions such as finance, inventory, costing, procurement, manufacturing, sales, human resources, and compliance within a single digital platform. We approach ERP implementation from a finance-first perspective, ensuring every system decision directly contributes to improved profitability, operational control, and long-term business value. A successful implementation not only aligns technology with business strategy but also streamlines operations, enhances scalability, and ensures regulatory compliance.",
   },
   {
     title: "Working Capital Advisory Management",
     subtitle: "Cash Flow Optimization & Liquidity Management",
     Icon: CashIcon,
-    detail: "We help maintain required liquidity and ensure seamless cash flow for every business need. We identify and resolve bottlenecks in working capital cycles, targeting leakages and blockages. By accelerating cash velocity and optimizing receivables, payables, and inventory processes, we ensure quicker turnaround and sustained financial health.",
+    detail: "Working Capital Management Services involves providing data analysis and early warning to help maintain required liquidity. It means ensuring you avoid surprises and have seamless cash flow for every business need. We identify and resolve bottlenecks in working capital cycles, targeting leakages and blockages. By accelerating cash velocity, optimizing internal processes for receivables and payables, and maintaining inventory discipline, we ensure quicker turnaround and sustained financial health.",
   },
   {
     title: "Compliance Advisory Services",
     subtitle: "Statutory, Financial & Governance Obligations",
     Icon: ShieldIcon,
-    detail: "Operating in multiple regulatory environments requires structured compliance management. We assist organizations in understanding and meeting their statutory, financial, and governance obligations — helping businesses maintain regulatory alignment while minimizing operational and legal risks.",
+    detail: "Operating in multiple regulatory environments requires structured compliance management. We assist organizations in understanding and meeting their statutory, financial, and governance obligations. Our compliance advisory services help businesses maintain regulatory alignment while minimizing operational and legal risks.",
   },
   {
     title: "Internal Audit Services",
     subtitle: "Risk-Based Audit Aligned with International Standards",
     Icon: AuditIcon,
-    detail: "We provide independent internal audit services to help organizations strengthen internal controls, manage operational risks, and improve governance. Our risk-based audit approach evaluates financial processes, compliance systems, and operational efficiency to identify gaps and recommend practical improvements aligned with international auditing standards.",
+    detail: "We provide independent internal audit services to help organizations strengthen internal controls, manage operational risks, and improve governance. Our risk-based audit approach evaluates financial processes, compliance systems, and operational efficiency to identify gaps and recommend practical improvements. We offer high-quality, cost-efficient internal audit support aligned with international auditing standards for global clients.",
   },
   {
     title: "Tax Litigation Advisory Support",
     subtitle: "Technical Research & Tax Position Analysis",
     Icon: ScalesIcon,
-    detail: "Our services include providing technical research, preparation of documents, and analysis of tax positions — keeping in view leverages on international taxation with a cost-efficient delivery model.",
+    detail: "Our services include providing technical research, preparation of documents, analysis of tax positions, and keeping in view leverages on international taxation with a cost-efficient delivery model.",
   },
   {
     title: "Other Professional Services",
     subtitle: "Advisory & Support Tailored to Client Needs",
     Icon: BriefcaseIcon,
-    detail: "In addition to the services outlined above, the firm may undertake other lawful professional and advisory services as determined by the partners from time to time, consistent with the firm's expertise and the evolving needs of its clients.",
+    detail: "In addition to the services outlined above, the firm may undertake other lawful professional and advisory services as may be determined by the partners from time to time, consistent with the firm's expertise and the evolving needs of its clients.",
   },
 ];
 
@@ -159,8 +159,10 @@ export default function Services() {
 
                 {/* Expandable detail */}
                 {isOpen && (
-                  <div className="px-7 pb-7 border-t border-white/10">
-                    <p className="text-blue-100 text-sm leading-relaxed pt-4">{detail}</p>
+                  <div className="px-7 pb-7 border-t border-white/10 space-y-3">
+                    {detail.split("\n\n").map((para, idx) => (
+                      <p key={idx} className="text-blue-100 text-sm leading-relaxed pt-4 first:pt-4">{para}</p>
+                    ))}
                   </div>
                 )}
               </button>

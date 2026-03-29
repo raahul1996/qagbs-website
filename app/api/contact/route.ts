@@ -8,7 +8,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "QAGBS Contact Form <onboarding@resend.dev>",
-      to: ["vijay2k14@gmail.com", "mrsrikanta3@gmail.com", "bsraahul@gmail.com"],
+      to: ["contact@qagbs.com"],
       replyTo: email,
       subject: `New enquiry from ${firstName} ${lastName}${service ? ` — ${service}` : ""}`,
       html: `

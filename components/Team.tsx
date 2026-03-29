@@ -25,35 +25,52 @@ const leaders = [
   {
     name: "Mr. Scott Wells, CFA",
     role: "Co-Founder",
-    title: "Managing Partner, G&O Consulting | Managing Director, Minerva Valuations",
+    credentials: "CFA Charterholder, BS Finance — Miami University, FINRA Series 3 & SIE",
     initials: "SW",
     photo: "/team/scott-wells.jpg",
-    credentials: ["CFA Charterholder", "BS Finance, Miami University", "FINRA Series 3 & SIE"],
     bio: "20+ years of corporate banking and C-suite financial strategy. Owner and Managing Partner at G&O Consulting providing fractional CFO and capital advisory services. Managing Director at Minerva Valuations specializing in debt capital, business valuations, and M&A. Former VP Finance at MDpanel overseeing a $50M P&L with 22.5% YoY EBITDA growth. Career includes Bank of America, BBVA Compass, and Wells Fargo.",
     expertise: ["Capital Advisory & Fractional CFO", "Business Valuations & M&A", "Corporate Banking", "Financial Modeling & CIMs", "Treasury & Investor Relations"],
-    contact: { phone: "(480) 215-1025", email: "scottwellscfa@gmail.com", location: "Los Angeles, CA" },
+    contact: { phone: "(480) 215-1025", email: "scott@qagbs.com", location: "Los Angeles, CA" },
   },
   {
     name: "Mr. S. Vijayakumar",
     role: "Co-Founder",
-    title: "M.Com | PGDFM | ACMA | ACS | LL.M | EY IFRS Certified",
+    credentials: "M.Com, PGDFM, ACMA, ACS, LL.M, EY IFRS Certified",
     initials: "VK",
     photo: "/team/vijay-kumar.jpg",
-    credentials: ["M.Com", "PGDFM", "ACMA", "ACS", "LL.M", "EY IFRS Certified"],
-    bio: "A financial strategist with over three decades of comprehensive experience in financial management, strategic planning, and corporate governance. Vijayakumar has led global finance operations across the USA, UK, Netherlands, China, Hong Kong, Taiwan, and Japan, combining deep technical expertise with a collaborative approach rooted in process excellence.",
+    bio: `Financial strategist with a passion for turning complex numbers into clear, actionable insights. Blending deep expertise in tax compliance, ERP systems, and global finance with a knack for transforming financial health across borders. Driven by precision, curiosity, and a genuine respect for diverse cultures — helping businesses thrive one balance sheet at a time.
+
+He is a dedicated and highly skilled finance professional with over three decades of comprehensive experience in financial management, strategic planning, and corporate governance and taxation. Throughout his career, he has taken great pride in his ability to interpret complex financial data — ranging from budgets and income statements to forecasts and variance analyses — to provide actionable insights that drive business growth and restore financial health.
+
+His expertise lies in end-to-end management of financial and accounting matters. He has extensive experience in preparing financial statements, overseeing monthly and annual closings, and enhancing financial procedures to ensure transparency and efficiency. He is particularly proficient in budget projections, working capital management, fixed assets, and statutory compliance.
+
+He possesses a unique blend of financial and legal acumen — holding a Master of Commerce, a Post Graduate Diploma in Financial Management, Associate Membership of both ICMAI (ACMA) and ICSI (ACS), and a Master of Law (LL.M). He has committed to lifelong learning, as evidenced by his recent Diploma in Information System Security Audit and participation in EY's IFRS certification course.
+
+He brings rigorous perspective to regulatory compliance and taxation, having successfully led numerous Indian tax assessments including Direct and Indirect taxes, GST, and Transfer Pricing, often resolving high-value litigations without adverse material tax adjustments. His experience extends to FEMA compliance, ECB matters, and foreign inward capital remittance.
+
+Most recently, he served as Associate Vice President of Finance at Brane Enterprises and as Senior Director of Global Finance at Imaging Endpoints, managing operations across the USA, UK, Netherlands, China, Hong Kong, Taiwan, and Japan.`,
     expertise: ["ERP Implementation (Oracle)", "Direct & Indirect Tax", "Transfer Pricing & FEMA", "Working Capital Management", "Internal Controls & SOPs"],
-    contact: { phone: "+91 97001 92091", email: "vijay2k14@gmail.com", location: "Cardiff, United Kingdom" },
+    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "Bengaluru, India" },
   },
   {
     name: "Mr. Srikanteswara M R",
     role: "Co-Founder",
-    title: "Post Graduate in Commerce | 35+ Years Experience",
+    credentials: "Post Graduate in Commerce, Academics in Chartered Accountancy & Cost Accountancy",
     initials: "SR",
     photo: "/team/srikanteswara.jpg",
-    credentials: ["Post Graduate in Commerce", "35+ Years Experience"],
-    bio: "A strategic finance leader with 35 years of excellence in financial management and corporate governance. Srikanteswara spent over a decade at Frauscher Sensor Technology India, instrumental in growing the company from ₹120 million to ₹5,000 million, emerging as a market leader in the railway signalling sector. Known for integrity, meticulous attention to detail, and collaborative leadership.",
+    bio: `Strategic Finance Leader with Post Graduation in Commerce and Academics in Chartered Accountancy, Cost Accountancy and having 35+ Years of Excellence in Financial Management & Corporate Governance.
+
+He is a distinguished finance, tax, accounting and cost accounting professional with an illustrious career spanning over three decades. With a specialized focus on multinational Infrastructure and Railway Signalling sector for more than 25 years, he has established himself as a strategic leader capable of navigating complex financial landscapes, driving exponential business growth, and ensuring rigorous statutory compliance.
+
+Throughout his career, he has combined deep technical expertise in GAAP and IFRS with a visionary approach to business strategy. He is recognized for his ability to bridge the gap between financial oversight and operational excellence, having played a pivotal role in scaling organizations from boutique operations into multi-hundred-crore enterprises. His core competencies encompass financial reporting, internal audit, taxation (Direct and Indirect), project accounting, and M&A support.
+
+He held a senior position at Frauscher Sensor Technology India Pvt Ltd. During his decade-long tenure, he was instrumental in the company's meteoric rise, supporting the business as it grew and emerged as market leader. He oversaw Finance, Accounts, Legal, Tax functions and Corporate Compliance, implementing robust KPI systems across Engineering, Procurement, and IT, and successfully structuring subsidiaries and Joint Ventures.
+
+He worked at Siemens Rail Automation India Pvt Ltd (formerly Invensys), managing the full spectrum of finance and accounting for the Asia-Pacific leadership and specializing in Project Accounting and risk evaluation for high-stakes Metro and Mainline signaling projects. His foundational years were spent at Ansaldo, where he mastered project revenue recognition, hedge accounting, IFRS, and comprehensive Indirect Tax matters.
+
+He is known for his integrity, meticulous attention to detail, and collaborative leadership style. Under his leadership, the firm is anchored in the philosophy of delivering precision-driven, insight-led, and globally aligned financial and advisory solutions to clients across borders.`,
     expertise: ["Internal Audit (IFRS)", "Cost & Project Accounting", "M&A & Due Diligence", "Capital Budgeting", "Subsidiary & JV Structuring"],
-    contact: { phone: "+91 9686500446", email: "mrsrikanta3@gmail.com", location: "Bengaluru, India" },
+    contact: { phone: "+91 9535734505", email: "sri@qagbs.com", location: "Bengaluru, India" },
   },
 ];
 
@@ -82,13 +99,14 @@ export default function Team() {
                 </a>
               </div>
             </div>
-            {/* Right: chess image */}
+            {/* Right: chess image — brightened to show white pieces */}
             <div className="relative hidden lg:block">
               <Image
                 src="/leadership-bg.jpg"
                 alt="Strategic leadership"
                 fill
                 className="object-cover object-center"
+                style={{ filter: "brightness(1.6) contrast(0.85)" }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#eff6ff] via-transparent to-transparent" />
             </div>
@@ -109,19 +127,17 @@ export default function Team() {
 
                 {/* Name & role */}
                 <h3 className="text-[#0d2240] font-bold text-lg text-center mb-1">{leader.name}</h3>
-                <p className="text-[#1a56db] text-sm font-semibold text-center mb-1">{leader.role}</p>
+                <p className="text-[#1a56db] text-sm font-semibold text-center mb-2">{leader.role}</p>
 
-                {/* Credentials */}
-                <div className="flex flex-wrap justify-center gap-1.5 mb-4">
-                  {leader.credentials.map((c) => (
-                    <span key={c} className="bg-blue-50 border border-blue-200 text-[#1a56db] text-xs px-2.5 py-1 rounded-full">
-                      {c}
-                    </span>
-                  ))}
-                </div>
+                {/* Credentials inline */}
+                <p className="text-slate-500 text-xs text-center mb-4 leading-relaxed">{leader.credentials}</p>
 
                 {/* Bio */}
-                <p className="text-slate-600 text-sm leading-relaxed mb-5 flex-grow">{leader.bio}</p>
+                <div className="text-slate-600 text-sm leading-relaxed mb-5 flex-grow space-y-3">
+                  {leader.bio.split("\n\n").map((para, i) => (
+                    <p key={i} className="text-justify">{para}</p>
+                  ))}
+                </div>
 
                 {/* Expertise */}
                 <div className="mb-5">
