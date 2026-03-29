@@ -22,7 +22,8 @@ function Avatar({ src, name, initials }: { src: string; name: string; initials: 
 
 const leaders = [
   {
-    name: "Mr. Scott Wells, CFA",
+    name: "Mr. Scott Wells",
+    credentials: "CFA",
     role: "Co-Founder",
     initials: "SW",
     photo: "/team/scott-wells.jpg",
@@ -31,7 +32,8 @@ const leaders = [
     contact: { phone: "(480) 215-1025", email: "scott@qagbs.com", location: "Los Angeles, CA" },
   },
   {
-    name: "Mr. S. Vijayakumar, M.Com, PGDFM, ACMA, ACS, LL.M, EY IFRS Certified",
+    name: "Mr. S. Vijayakumar",
+    credentials: "M.Com, PGDFM, ACMA, ACS, LL.M, DISSA, EY IFRS Certified",
     role: "Co-Founder",
     initials: "VK",
     photo: "/team/vijay-kumar.jpg",
@@ -56,7 +58,8 @@ His educational, ethical background is a cornerstone with which he peaked the pr
     contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India" },
   },
   {
-    name: "Mr. Srikanteswara M R, Post Graduate in Commerce, Academics in Chartered Accountancy & Cost Accountancy",
+    name: "Mr. Srikanteswara M R",
+    credentials: "Post Graduate in Commerce, Academics in Chartered Accountancy & Cost Accountancy",
     role: "Co-Founder",
     initials: "SR",
     photo: "/team/srikanteswara.jpg",
@@ -137,7 +140,10 @@ export default function Team() {
                 </div>
 
                 {/* Name with qualifications */}
-                <h3 className="text-[#0d2240] font-bold text-base text-center mb-1 leading-snug">{leader.name}</h3>
+                <h3 className="text-center mb-1 leading-snug">
+                  <span className="text-[#0d2240] font-bold text-base">{leader.name}</span>
+                  {leader.credentials && <span className="text-[#1a56db] font-normal italic text-sm">, {leader.credentials}</span>}
+                </h3>
                 {/* Role */}
                 <p className="text-[#1a56db] text-sm font-semibold text-center mb-4">{leader.role}</p>
 
