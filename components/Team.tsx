@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 
 function Avatar({ src, name, initials }: { src: string; name: string; initials: string }) {
   const [err, setErr] = useState(false);
@@ -99,15 +98,19 @@ export default function Team() {
                 </a>
               </div>
             </div>
-            {/* Right: chess image — brightened to show white pieces */}
-            <div className="relative hidden lg:block">
-              <Image
-                src="/leadership-bg.jpg"
-                alt="Strategic leadership"
-                fill
-                className="object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#eff6ff] via-transparent to-transparent" />
+            {/* Right: firm highlights */}
+            <div className="hidden lg:flex flex-col justify-center gap-4 py-20 pl-8">
+              {[
+                { stat: "85+", label: "Combined Years of Experience" },
+                { stat: "3", label: "Co-Founders Across Global Markets" },
+                { stat: "10+", label: "Countries Served" },
+                { stat: "8", label: "Core Service Offerings" },
+              ].map(({ stat, label }) => (
+                <div key={label} className="flex items-center gap-5 bg-white border border-blue-100 rounded-2xl px-6 py-5 shadow-sm">
+                  <span className="text-4xl font-black text-[#1a56db] leading-none w-20 flex-shrink-0">{stat}</span>
+                  <span className="text-[#0d2240] font-semibold text-sm leading-snug">{label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
