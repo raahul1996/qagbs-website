@@ -24,7 +24,6 @@ const leaders = [
   {
     name: "Mr. Scott Wells, CFA",
     role: "Co-Founder",
-    credentials: "CFA Charterholder, BS Finance — Miami University, FINRA Series 3 & SIE",
     initials: "SW",
     photo: "/team/scott-wells.jpg",
     bio: "20+ years of corporate banking and C-suite financial strategy. Owner and Managing Partner at G&O Consulting providing fractional CFO and capital advisory services. Managing Director at Minerva Valuations specializing in debt capital, business valuations, and M&A. Former VP Finance at MDpanel overseeing a $50M P&L with 22.5% YoY EBITDA growth. Career includes Bank of America, BBVA Compass, and Wells Fargo.",
@@ -32,42 +31,52 @@ const leaders = [
     contact: { phone: "(480) 215-1025", email: "scott@qagbs.com", location: "Los Angeles, CA" },
   },
   {
-    name: "Mr. S. Vijayakumar",
+    name: "Mr. S. Vijayakumar, M.Com, PGDFM, ACMA, ACS, LL.M, EY IFRS Certified",
     role: "Co-Founder",
-    credentials: "M.Com, PGDFM, ACMA, ACS, LL.M, EY IFRS Certified",
     initials: "VK",
     photo: "/team/vijay-kumar.jpg",
-    bio: `Financial strategist with a passion for turning complex numbers into clear, actionable insights. Blending deep expertise in tax compliance, ERP systems, and global finance with a knack for transforming financial health across borders. Driven by precision, curiosity, and a genuine respect for diverse cultures — helping businesses thrive one balance sheet at a time.
+    bio: `Financial strategist with a passion for turning complex numbers into clear, actionable insights. Blending deep expertise in tax compliance, ERP systems, and global finance with a knack for transforming financial health across borders. Driven by precision, curiosity, and a genuine respect for diverse cultures\u2014helping businesses thrive one balance sheet at a time.
 
-He is a dedicated and highly skilled finance professional with over three decades of comprehensive experience in financial management, strategic planning, and corporate governance and taxation. Throughout his career, he has taken great pride in his ability to interpret complex financial data — ranging from budgets and income statements to forecasts and variance analyses — to provide actionable insights that drive business growth and restore financial health.
+He is dedicated and highly skilled finance professional with over three decades of comprehensive experience in financial management, strategic planning, and corporate governance and taxation. Throughout his career, He has taken great pride in his ability to interpret complex financial data\u2014ranging from budgets and income statements to forecasts and variance analyses\u2014to provide actionable insights that drive business growth and restore financial health. His professional journey has been defined by a commitment to excellence, a meticulous approach to internal controls, and a passion for integrating advanced technology into financial systems towards continuous improvement.
 
-His expertise lies in end-to-end management of financial and accounting matters. He has extensive experience in preparing financial statements, overseeing monthly and annual closings, and enhancing financial procedures to ensure transparency and efficiency. He is particularly proficient in budget projections, working capital management, fixed assets, and statutory compliance.
+His expertise lies in the end-to-end management of financial and accounting matters. He has extensive experience in preparing financial statements, overseeing monthly and annual closings, and enhancing financial procedures to ensure transparency and efficiency. He is particularly proficient in conducting budget projections and managing working capital, fixed assets, and statutory compliance with short term and long term financial objective. One of his core strengths is his ability to support Professionals and Boards of Directors and every stakeholder by translating data into clear, visual reports\u2014using latest tools, functions, charts, and tables\u2014to facilitate informed decision-making.
 
-He possesses a unique blend of financial and legal acumen — holding a Master of Commerce, a Post Graduate Diploma in Financial Management, Associate Membership of both ICMAI (ACMA) and ICSI (ACS), and a Master of Law (LL.M). He has committed to lifelong learning, as evidenced by his recent Diploma in Information System Security Audit and participation in EY's IFRS certification course.
+He posses a unique blend of financial and legal acumen. he holds a Master of Commerce and a Post Graduate Diploma in Financial Management in professional arena He is an Associate Member of both the Institute of Cost Accountants of India (ACMA) and the Institute of Company Secretaries of India (ACS), and holding a Master of Law (LL.M), He has committed to lifelong learning, as evidenced by his recent Diploma in Information System Security Audit and his participation in EY\u2019s IFRS certification course.
 
-He brings rigorous perspective to regulatory compliance and taxation, having successfully led numerous Indian tax assessments including Direct and Indirect taxes, GST, and Transfer Pricing, often resolving high-value litigations without adverse material tax adjustments. His experience extends to FEMA compliance, ECB matters, and foreign inward capital remittance.
+He brings a rigorous perspective to regulatory compliance and taxation. He has successfully led numerous Indian tax assessments, including Direct and Indirect taxes, GST, and expertise in Transfer Pricing concept and principles, often resolving high-value litigations and audits without adverse material tax adjustments. His experience also extends to managing Foreign Exchange Management Act (FEMA) compliances and foreign inward capital remittance, External Commercial Borrowings (ECB) matters with best compliance of Central Bank of India (Reserve Bank of India).
 
-Most recently, he served as Associate Vice President of Finance at Brane Enterprises and as Senior Director of Global Finance at Imaging Endpoints, managing operations across the USA, UK, Netherlands, China, Hong Kong, Taiwan, and Japan.`,
+His leadership style is rooted in collaboration and process excellence. He has proven track record of spearheading Oracle ERP implementations and designing Standard Operating Procedures (SOPs) that streamline operations. He was supervising accounts in China under PRC GAAP or managing a multi-location contract in India, He approaches every task with a self-starter mindset and a deep respect for diverse cultures.
+
+He has driven by the goal of improving financial performance through strategic oversight and robust reporting. His analytical skills and problem-solving abilities to help organizations navigate the complexities of the modern financial landscape while maintaining the highest standards of integrity and compliance.
+
+In recent years, He has embraced the challenge of working within dynamic startup environments and global MNCs. Most recently, He has served as Associate Vice President of Finance at Brane Enterprises, where he acted as a Subject Matter Expert in testing and validating ERP solutions. In this role, He has focused on internal controls, segregation of duties, and ensuring that business solutions adhered to Generally Accepted Accounting Principles (GAAP). Prior to that, as Senior Director of Global Finance at Imaging Endpoints, In various Multi National Organizations like DISA India, Metso Minerals, CSR (Cambridge Silicon Radio), LSG Sky Chef & USP. He has managed financial operations across multiple jurisdictions, including the USA, UK, Netherlands, China, Hong Kong, Taiwan and Japan.
+
+His educational, ethical background is a cornerstone with which he peaked the professional identity.`,
     expertise: ["ERP Implementation (Oracle)", "Direct & Indirect Tax", "Transfer Pricing & FEMA", "Working Capital Management", "Internal Controls & SOPs"],
     contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India" },
   },
   {
-    name: "Mr. Srikanteswara M R",
+    name: "Mr. Srikanteswara M R, Post Graduate in Commerce, Academics in Chartered Accountancy & Cost Accountancy",
     role: "Co-Founder",
-    credentials: "Post Graduate in Commerce, Academics in Chartered Accountancy & Cost Accountancy",
     initials: "SR",
     photo: "/team/srikanteswara.jpg",
-    bio: `Strategic Finance Leader with Post Graduation in Commerce and Academics in Chartered Accountancy, Cost Accountancy and having 35+ Years of Excellence in Financial Management & Corporate Governance.
+    bio: `Strategic Finance Leader with Post Graduation in Commerce and Academics in Chartered Accountancy, Cost Accountancy and having 35+ Years of Excellence in Financial Management & Corporate Governance
 
 He is a distinguished finance, tax, accounting and cost accounting professional with an illustrious career spanning over three decades. With a specialized focus on multinational Infrastructure and Railway Signalling sector for more than 25 years, he has established himself as a strategic leader capable of navigating complex financial landscapes, driving exponential business growth, and ensuring rigorous statutory compliance.
 
 Throughout his career, he has combined deep technical expertise in GAAP and IFRS with a visionary approach to business strategy. He is recognized for his ability to bridge the gap between financial oversight and operational excellence, having played a pivotal role in scaling organizations from boutique operations into multi-hundred-crore enterprises. His core competencies encompass financial reporting, internal audit, taxation (Direct and Indirect), project accounting, and M&A support.
 
-He held a senior position at Frauscher Sensor Technology India Pvt Ltd. During his decade-long tenure, he was instrumental in the company's meteoric rise, supporting the business as it grew and emerged as market leader. He oversaw Finance, Accounts, Legal, Tax functions and Corporate Compliance, implementing robust KPI systems across Engineering, Procurement, and IT, and successfully structuring subsidiaries and Joint Ventures.
+Held senior position at Frauscher Sensor Technology India Pvt Ltd. During his decade-long tenure, he was instrumental in the company\u2019s meteoric rise, supporting the business as it grew; entity emerged as market leader. he oversaw Finance, Accounts, Legal, Tax functions and Corporate Compliance.
 
-He worked at Siemens Rail Automation India Pvt Ltd (formerly Invensys), managing the full spectrum of finance and accounting for the Asia-Pacific leadership and specializing in Project Accounting and risk evaluation for high-stakes Metro and Mainline signaling projects. His foundational years were spent at Ansaldo, where he mastered project revenue recognition, hedge accounting, IFRS, and comprehensive Indirect Tax matters.
+His leadership was characterized by the implementation of robust KPI systems across diverse departments\u2014including Engineering, Procurement, and IT\u2014and the successful structuring of subsidiaries and Joint Ventures. His expertise in capital budgeting and cash flow optimization ensured the financial health of the organization during periods of rapid expansion.
 
-He is known for his integrity, meticulous attention to detail, and collaborative leadership style. Under his leadership, the firm is anchored in the philosophy of delivering precision-driven, insight-led, and globally aligned financial and advisory solutions to clients across borders.`,
+Worked at Siemens Rail Automation India Pvt Ltd (formerly Invensys). In this role, he managed the full spectrum of finance and accounting for the Asia-Pacific leadership, specializing in Project Accounting and risk evaluation for high-stakes projects such as Metro and Mainline signaling.
+
+His foundational years in the Railway Signaling industry were spent at Ansaldo, mastered the complexities of project revenue recognition, hedge accounting, and international financial reporting (IFRS), while managing comprehensive Indirect Tax matters, Global, Internal and Statutory Audits.
+
+He is known for his integrity, meticulous attention to detail, and a collaborative leadership style. Beyond the Financial Statements, he is a professional dedicated to continuous improvement and organizational stability, ensuring that every company he serves is positioned for long-term financial success. He is driven by a commitment to excellence and long-term value creation.
+
+Under his leadership, the firm is anchored in the philosophy of delivering precision-driven, insight-led, and globally aligned financial and advisory solutions to clients across borders.`,
     expertise: ["Internal Audit (IFRS)", "Cost & Project Accounting", "M&A & Due Diligence", "Capital Budgeting", "Subsidiary & JV Structuring"],
     contact: { phone: "+91 9535734505", email: "sri@qagbs.com", location: "Bengaluru, India" },
   },
@@ -127,12 +136,10 @@ export default function Team() {
                   <Avatar src={leader.photo} name={leader.name} initials={leader.initials} />
                 </div>
 
-                {/* Name & role */}
-                <h3 className="text-[#0d2240] font-bold text-lg text-center mb-1">{leader.name}</h3>
-                <p className="text-[#1a56db] text-sm font-semibold text-center mb-2">{leader.role}</p>
-
-                {/* Credentials inline */}
-                <p className="text-slate-500 text-xs text-center mb-4 leading-relaxed">{leader.credentials}</p>
+                {/* Name with qualifications */}
+                <h3 className="text-[#0d2240] font-bold text-base text-center mb-1 leading-snug">{leader.name}</h3>
+                {/* Role */}
+                <p className="text-[#1a56db] text-sm font-semibold text-center mb-4">{leader.role}</p>
 
                 {/* Bio */}
                 <div className="text-slate-600 text-sm leading-relaxed mb-5 flex-grow space-y-3">

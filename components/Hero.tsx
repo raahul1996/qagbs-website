@@ -24,16 +24,16 @@ export default function Hero() {
 
         {/* Tagline — each phrase on its own line */}
         <div className="mb-8 space-y-1">
-          <p className="text-5xl sm:text-6xl md:text-7xl font-black text-[#0d2240] leading-none tracking-tight">
+          <p className="text-2xl sm:text-3xl md:text-4xl font-black text-[#0d2240] leading-none tracking-tight">
             Precision
           </p>
-          <p className="text-5xl sm:text-6xl md:text-7xl font-black text-[#1a56db] leading-none tracking-tight">
+          <p className="text-2xl sm:text-3xl md:text-4xl font-black text-[#1a56db] leading-none tracking-tight">
             Intelligence
           </p>
-          <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0d2240] leading-snug">
+          <p className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#0d2240] leading-snug">
             Global Advantage
           </p>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-600 leading-snug">
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-slate-600 leading-snug">
             Enduring Boundless Impact
           </p>
         </div>
