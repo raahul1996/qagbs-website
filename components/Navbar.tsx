@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Logo */}
         <button onClick={() => scrollTo("home")} className="flex items-center gap-3 focus:outline-none">
           <div className="flex-shrink-0">
-            <Image src="/logo.jpeg" alt="QAGBS Logo" width={50} height={50} className="rounded-full object-contain" />
+            <Image src="/logo.jpeg" alt="QAGBS Logo" width={64} height={64} className="rounded-full object-contain" />
           </div>
           <div className="text-left hidden sm:block">
             <div className="text-white font-bold text-base leading-tight tracking-wide">QAGBS</div>

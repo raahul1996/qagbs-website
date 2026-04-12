@@ -114,15 +114,15 @@ export default function Team() {
                 </a>
               </div>
             </div>
-            {/* Right: QAGBS logo */}
-            <div className="hidden lg:flex items-center justify-center py-20 pl-8">
+            {/* Right: leadership image */}
+            <div className="relative hidden lg:block">
               <Image
-                src="/logo.jpeg"
-                alt="Quick Acuity Global Business Solutions"
-                width={320}
-                height={320}
-                className="rounded-full object-contain"
+                src="/leadership-bg.jpg"
+                alt="Strategic leadership"
+                fill
+                className="object-cover object-center"
               />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#eff6ff] via-transparent to-transparent" />
             </div>
           </div>
         </div>
