@@ -58,7 +58,7 @@ In recent years, He has embraced the challenge of working within dynamic startup
 His educational, ethical background is a cornerstone with which he peaked the professional identity.`,
     expertise: ["ERP Implementation (Oracle)", "Direct & Indirect Tax", "Transfer Pricing & FEMA", "Working Capital Management", "Internal Controls & SOPs"],
     linkedin: "https://www.linkedin.com/in/vijayakumar-sowrirajalu-b7078536/",
-    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India" },
+    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "Bengaluru, India" },
   },
   {
     name: "Mr. Srikanteswara M R",

@@ -16,7 +16,7 @@ const contacts = [
     phone: "+91 9663546561",
     phoneHref: "tel:+919663546561",
     email: "vijay@qagbs.com",
-    address: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India",
+    address: "Bengaluru, India",
   },
   {
     name: "Mr. Srikanteswara M R",

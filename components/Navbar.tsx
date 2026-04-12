@@ -38,8 +38,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <button onClick={() => scrollTo("home")} className="flex items-center gap-3 focus:outline-none">
-          <div className="bg-white rounded-lg px-2 py-1 flex-shrink-0">
-            <Image src="/logo.jpeg" alt="QAGBS Logo" width={90} height={50} className="object-contain" style={{maxHeight: '50px', width: 'auto'}} />
+          <div className="flex-shrink-0">
+            <Image src="/logo.jpeg" alt="QAGBS Logo" width={50} height={50} className="rounded-full object-contain" />
           </div>
           <div className="text-left hidden sm:block">
             <div className="text-white font-bold text-base leading-tight tracking-wide">QAGBS</div>
