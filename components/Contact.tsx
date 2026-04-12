@@ -8,7 +8,7 @@ const contacts = [
     phone: "(480) 215-1025",
     phoneHref: "tel:+14802151025",
     email: "scott@qagbs.com",
-    address: "Los Angeles, CA, United States",
+    address: "Los Angeles, USA",
   },
   {
     name: "Mr. S. Vijayakumar",
@@ -24,7 +24,7 @@ const contacts = [
     phone: "+91 9535734505",
     phoneHref: "tel:+919535734505",
     email: "sri@qagbs.com",
-    address: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India",
+    address: "Bengaluru, India",
   },
 ];
 

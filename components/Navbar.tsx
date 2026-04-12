@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Logo */}
         <button onClick={() => scrollTo("home")} className="flex items-center gap-3 focus:outline-none">
           <div className="bg-white rounded-lg px-2 py-1 flex-shrink-0">
-            <Image src="/logo.png" alt="QAGBS Logo" width={90} height={50} className="object-contain" style={{maxHeight: '50px', width: 'auto'}} />
+            <Image src="/logo.jpeg" alt="QAGBS Logo" width={90} height={50} className="object-contain" style={{maxHeight: '50px', width: 'auto'}} />
           </div>
           <div className="text-left hidden sm:block">
             <div className="text-white font-bold text-base leading-tight tracking-wide">QAGBS</div>

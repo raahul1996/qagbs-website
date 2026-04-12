@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-[#0d2240] text-blue-300">
@@ -6,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-[#1a56db] flex items-center justify-center text-white font-bold text-xs">Q</div>
+              <Image src="/logo.jpeg" alt="QAGBS Logo" width={36} height={36} className="rounded-full object-contain" />
               <p className="text-white font-bold text-base">QAGBS</p>
             </div>
             <p className="text-sm leading-relaxed text-blue-300">
@@ -58,6 +60,12 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">Contact</h4>
             <ul className="space-y-4 text-sm">
               <li>
+                <div className="text-white font-medium mb-0.5">Mr. Scott Wells, CFA</div>
+                <a href="tel:+14802151025" className="block hover:text-white transition-colors">(480) 215-1025</a>
+                <a href="mailto:scott@qagbs.com" className="block hover:text-white transition-colors">scott@qagbs.com</a>
+                <div className="text-blue-400 text-xs mt-0.5">Los Angeles, USA</div>
+              </li>
+              <li>
                 <div className="text-white font-medium mb-0.5">Mr. S. Vijayakumar</div>
                 <a href="tel:+919663546561" className="block hover:text-white transition-colors">+91 9663546561</a>
                 <a href="mailto:vijay@qagbs.com" className="block hover:text-white transition-colors">vijay@qagbs.com</a>
@@ -68,12 +76,6 @@ export default function Footer() {
                 <a href="tel:+919535734505" className="block hover:text-white transition-colors">+91 9535734505</a>
                 <a href="mailto:sri@qagbs.com" className="block hover:text-white transition-colors">sri@qagbs.com</a>
                 <div className="text-blue-400 text-xs mt-0.5">Bengaluru, India</div>
-              </li>
-              <li>
-                <div className="text-white font-medium mb-0.5">Mr. Scott Wells, CFA</div>
-                <a href="tel:+14802151025" className="block hover:text-white transition-colors">(480) 215-1025</a>
-                <a href="mailto:scott@qagbs.com" className="block hover:text-white transition-colors">scott@qagbs.com</a>
-                <div className="text-blue-400 text-xs mt-0.5">Los Angeles, CA</div>
               </li>
             </ul>
           </div>

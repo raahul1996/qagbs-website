@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 function Avatar({ src, name, initials }: { src: string; name: string; initials: string }) {
   const [err, setErr] = useState(false);
@@ -29,7 +30,8 @@ const leaders = [
     photo: "/team/scott-wells.jpg",
     bio: "20+ years of corporate banking and C-suite financial strategy. Owner and Managing Partner at G&O Consulting providing fractional CFO and capital advisory services. Managing Director at Minerva Valuations specializing in debt capital, business valuations, and M&A. Former VP Finance at MDpanel overseeing a $50M P&L with 22.5% YoY EBITDA growth. Career includes Bank of America, BBVA Compass, and Wells Fargo.",
     expertise: ["Capital Advisory & Fractional CFO", "Business Valuations & M&A", "Corporate Banking", "Financial Modeling & CIMs", "Treasury & Investor Relations"],
-    contact: { phone: "(480) 215-1025", email: "scott@qagbs.com", location: "Los Angeles, CA" },
+    linkedin: "https://www.linkedin.com/in/scottwellscfa/",
+    contact: { phone: "(480) 215-1025", email: "scott@qagbs.com", location: "Los Angeles, USA" },
   },
   {
     name: "Mr. S. Vijayakumar",
@@ -55,6 +57,7 @@ In recent years, He has embraced the challenge of working within dynamic startup
 
 His educational, ethical background is a cornerstone with which he peaked the professional identity.`,
     expertise: ["ERP Implementation (Oracle)", "Direct & Indirect Tax", "Transfer Pricing & FEMA", "Working Capital Management", "Internal Controls & SOPs"],
+    linkedin: "https://www.linkedin.com/in/vijayakumar-sowrirajalu-b7078536/",
     contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "90 Lakshmanrao Road, Balepet, Bengaluru 560053, Karnataka, India" },
   },
   {
@@ -81,6 +84,7 @@ He is known for his integrity, meticulous attention to detail, and a collaborati
 
 Under his leadership, the firm is anchored in the philosophy of delivering precision-driven, insight-led, and globally aligned financial and advisory solutions to clients across borders.`,
     expertise: ["Internal Audit (IFRS)", "Cost & Project Accounting", "M&A & Due Diligence", "Capital Budgeting", "Subsidiary & JV Structuring"],
+    linkedin: "https://www.linkedin.com/in/srikanteswara-m-r-1295601a/",
     contact: { phone: "+91 9535734505", email: "sri@qagbs.com", location: "Bengaluru, India" },
   },
 ];
@@ -110,19 +114,15 @@ export default function Team() {
                 </a>
               </div>
             </div>
-            {/* Right: firm highlights */}
-            <div className="hidden lg:flex flex-col justify-center gap-4 py-20 pl-8">
-              {[
-                { stat: "85+", label: "Combined Years of Experience" },
-                { stat: "3", label: "Co-Founders Across Global Markets" },
-                { stat: "10+", label: "Countries Served" },
-                { stat: "8", label: "Core Service Offerings" },
-              ].map(({ stat, label }) => (
-                <div key={label} className="flex items-center gap-5 bg-white border border-blue-100 rounded-2xl px-6 py-5 shadow-sm">
-                  <span className="text-4xl font-black text-[#1a56db] leading-none w-20 flex-shrink-0">{stat}</span>
-                  <span className="text-[#0d2240] font-semibold text-sm leading-snug">{label}</span>
-                </div>
-              ))}
+            {/* Right: QAGBS logo */}
+            <div className="hidden lg:flex items-center justify-center py-20 pl-8">
+              <Image
+                src="/logo.jpeg"
+                alt="Quick Acuity Global Business Solutions"
+                width={320}
+                height={320}
+                className="rounded-full object-contain"
+              />
             </div>
           </div>
         </div>
@@ -190,6 +190,14 @@ export default function Team() {
                     </svg>
                     {leader.contact.location}
                   </p>
+                  {leader.linkedin && (
+                    <a href={leader.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#1a56db] transition-colors">
+                      <svg className="w-4 h-4 text-[#1a56db]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                      </svg>
+                      LinkedIn
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
