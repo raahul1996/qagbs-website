@@ -115,7 +115,7 @@ export default function Services() {
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
-    <section id="services" className="py-24 bg-[#dbeafe]">
+    <section id="services" className="py-24 bg-[#dbeafe] scroll-mt-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <p className="text-[#1a56db] text-sm font-semibold uppercase tracking-widest mb-3">What We Offer</p>

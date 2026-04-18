@@ -41,7 +41,7 @@ const industries = [
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-16">
 
       {/* 1. About Us */}
       <div className="py-24 bg-white">

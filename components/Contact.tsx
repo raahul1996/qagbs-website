@@ -64,7 +64,7 @@ export default function Contact() {
   const inputClass = "w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#1a56db] focus:ring-1 focus:ring-[#1a56db] bg-white transition-colors";
 
   return (
-    <section id="contact" className="py-24 bg-[#eff6ff]">
+    <section id="contact" className="py-24 bg-[#eff6ff] scroll-mt-16">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <p className="text-[#1a56db] text-sm font-semibold uppercase tracking-widest mb-3">Get In Touch</p>

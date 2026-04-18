@@ -17,7 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 80);
+      setScrolled(window.scrollY > 10);
       let current = "home";
       for (const { id } of tabs) {
         const el = document.getElementById(id);

@@ -91,7 +91,7 @@ Under his leadership, the firm is anchored in the philosophy of delivering preci
 
 export default function Team() {
   return (
-    <section id="leadership">
+    <section id="leadership" className="scroll-mt-16">
       {/* Banner */}
       <div className="relative bg-[#eff6ff] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
