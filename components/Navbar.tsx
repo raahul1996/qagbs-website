@@ -43,8 +43,8 @@ export default function Navbar() {
             <Image
               src="/logo.jpeg"
               alt="QAGBS Logo"
-              width={80}
-              height={80}
+              width={112}
+              height={112}
               className="rounded-full object-contain"
             />
             <div className="text-center">
@@ -80,9 +80,9 @@ export default function Navbar() {
       </div>
 
       {/* Mobile: single row with logo + hamburger */}
-      <div className="md:hidden flex items-center justify-between px-6 h-16">
+      <div className="md:hidden flex items-center justify-between px-6 h-20">
         <button onClick={() => scrollTo("home")} className="flex items-center gap-2 focus:outline-none">
-          <Image src="/logo.jpeg" alt="QAGBS Logo" width={44} height={44} className="rounded-full object-contain" />
+          <Image src="/logo.jpeg" alt="QAGBS Logo" width={56} height={56} className="rounded-full object-contain" />
           <div className="text-white font-bold text-sm leading-tight">QAGBS</div>
         </button>
         <button className="p-2 text-blue-200" onClick={() => setOpen(!open)} aria-label="Toggle menu">

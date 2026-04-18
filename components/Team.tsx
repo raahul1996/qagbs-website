@@ -35,7 +35,7 @@ const leaders = [
   },
   {
     name: "Mr. S. Vijayakumar",
-    credentials: "M.Com, PGDFM, ACMA, ACS, LL.M, DISSA",
+    credentials: "M.Com, PGDFM, ACMA, ACS, LL.M, DISSA, IFRS Certified",
     role: "Co-Founder",
     initials: "VK",
     photo: "/team/vijay-kumar.jpg",
@@ -45,7 +45,7 @@ He is dedicated and highly skilled finance professional with over three decades 
 
 His expertise lies in the end-to-end management of financial and accounting matters. He has extensive experience in preparing financial statements, overseeing monthly and annual closings, and enhancing financial procedures to ensure transparency and efficiency. He is particularly proficient in conducting budget projections and managing working capital, fixed assets, and statutory compliance with short term and long term financial objective. One of his core strengths is his ability to support Professionals and Boards of Directors and every stakeholder by translating data into clear, visual reports\u2014using latest tools, functions, charts, and tables\u2014to facilitate informed decision-making.
 
-He posses a unique blend of financial and legal acumen. he holds a Master of Commerce and a Post Graduate Diploma in Financial Management in professional arena He is an Associate Member of both the Institute of Cost Accountants of India (ACMA) and the Institute of Company Secretaries of India (ACS), and holding a Master of Law (LL.M), He has committed to lifelong learning, as evidenced by his recent Diploma in Information System Security Audit and his participation in EY\u2019s IFRS certification course.
+He posses a unique blend of financial and legal acumen. he holds a Master of Commerce and a Post Graduate Diploma in Financial Management in professional arena He is an Associate Member of both the Institute of Cost Accountants of India (ACMA) and the Institute of Company Secretaries of India (ACS), and holding a Master of Law (LL.M), He has committed to lifelong learning, as evidenced by his recent Diploma in Information System Security Audit and his IFRS certification.
 
 He brings a rigorous perspective to regulatory compliance and taxation. He has successfully led numerous Indian tax assessments, including Direct and Indirect taxes, GST, and expertise in Transfer Pricing concept and principles, often resolving high-value litigations and audits without adverse material tax adjustments. His experience also extends to managing Foreign Exchange Management Act (FEMA) compliances and foreign inward capital remittance, External Commercial Borrowings (ECB) matters with best compliance of Central Bank of India (Reserve Bank of India).
 

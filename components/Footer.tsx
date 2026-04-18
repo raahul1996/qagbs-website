@@ -53,6 +53,16 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <div className="mt-6 space-y-4 text-xs">
+              <div>
+                <div className="text-white font-medium mb-0.5">USA</div>
+                <div className="text-blue-400">Los Angeles, USA</div>
+              </div>
+              <div>
+                <div className="text-white font-medium mb-0.5">India</div>
+                <div className="text-blue-400">No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053</div>
+              </div>
+            </div>
           </div>
 
           {/* Contact */}
