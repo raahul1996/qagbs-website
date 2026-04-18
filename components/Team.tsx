@@ -31,11 +31,11 @@ const leaders = [
     bio: "20+ years of corporate banking and C-suite financial strategy. Owner and Managing Partner at G&O Consulting providing fractional CFO and capital advisory services. Managing Director at Minerva Valuations specializing in debt capital, business valuations, and M&A. Former VP Finance at MDpanel overseeing a $50M P&L with 22.5% YoY EBITDA growth. Career includes Bank of America, BBVA Compass, and Wells Fargo.",
     expertise: ["Capital Advisory & Fractional CFO", "Business Valuations & M&A", "Corporate Banking", "Financial Modeling & CIMs", "Treasury & Investor Relations"],
     linkedin: "https://www.linkedin.com/in/scottwellscfa/",
-    contact: { phone: "(480) 215-1025", email: "scott@qagbs.com", location: "Los Angeles, USA" },
+    contact: { phone: "+1 (480) 215-1025", email: "scott@qagbs.com", location: "Los Angeles, USA" },
   },
   {
     name: "Mr. S. Vijayakumar",
-    credentials: "M.Com, PGDFM, ACMA, ACS, LL.M, DISSA, EY IFRS Certified",
+    credentials: "M.Com, PGDFM, ACMA, ACS, LL.M, DISSA",
     role: "Co-Founder",
     initials: "VK",
     photo: "/team/vijay-kumar.jpg",
@@ -58,7 +58,7 @@ In recent years, He has embraced the challenge of working within dynamic startup
 His educational, ethical background is a cornerstone with which he peaked the professional identity.`,
     expertise: ["ERP Implementation (Oracle)", "Direct & Indirect Tax", "Transfer Pricing & FEMA", "Working Capital Management", "Internal Controls & SOPs"],
     linkedin: "https://www.linkedin.com/in/vijayakumar-sowrirajalu-b7078536/",
-    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "Bengaluru, India" },
+    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053" },
   },
   {
     name: "Mr. Srikanteswara M R",
@@ -85,7 +85,7 @@ He is known for his integrity, meticulous attention to detail, and a collaborati
 Under his leadership, the firm is anchored in the philosophy of delivering precision-driven, insight-led, and globally aligned financial and advisory solutions to clients across borders.`,
     expertise: ["Internal Audit (IFRS)", "Cost & Project Accounting", "M&A & Due Diligence", "Capital Budgeting", "Subsidiary & JV Structuring"],
     linkedin: "https://www.linkedin.com/in/srikanteswara-m-r-1295601a/",
-    contact: { phone: "+91 9535734505", email: "sri@qagbs.com", location: "Bengaluru, India" },
+    contact: { phone: "+91 9535734505", email: "sri@qagbs.com", location: "No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053" },
   },
 ];
 

@@ -61,7 +61,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li>
                 <div className="text-white font-medium mb-0.5">Mr. Scott Wells, CFA</div>
-                <a href="tel:+14802151025" className="block hover:text-white transition-colors">(480) 215-1025</a>
+                <a href="tel:+14802151025" className="block hover:text-white transition-colors">+1 (480) 215-1025</a>
                 <a href="mailto:scott@qagbs.com" className="block hover:text-white transition-colors">scott@qagbs.com</a>
                 <div className="text-blue-400 text-xs mt-0.5">Los Angeles, USA</div>
               </li>
@@ -69,13 +69,13 @@ export default function Footer() {
                 <div className="text-white font-medium mb-0.5">Mr. S. Vijayakumar</div>
                 <a href="tel:+919663546561" className="block hover:text-white transition-colors">+91 9663546561</a>
                 <a href="mailto:vijay@qagbs.com" className="block hover:text-white transition-colors">vijay@qagbs.com</a>
-                <div className="text-blue-400 text-xs mt-0.5">Bengaluru, India</div>
+                <div className="text-blue-400 text-xs mt-0.5">No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053</div>
               </li>
               <li>
                 <div className="text-white font-medium mb-0.5">Mr. Srikanteswara M R</div>
                 <a href="tel:+919535734505" className="block hover:text-white transition-colors">+91 9535734505</a>
                 <a href="mailto:sri@qagbs.com" className="block hover:text-white transition-colors">sri@qagbs.com</a>
-                <div className="text-blue-400 text-xs mt-0.5">Bengaluru, India</div>
+                <div className="text-blue-400 text-xs mt-0.5">No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053</div>
               </li>
             </ul>
           </div>

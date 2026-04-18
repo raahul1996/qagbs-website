@@ -5,7 +5,7 @@ const contacts = [
   {
     name: "Mr. Scott Wells, CFA",
     role: "Co-Founder",
-    phone: "(480) 215-1025",
+    phone: "+1 (480) 215-1025",
     phoneHref: "tel:+14802151025",
     email: "scott@qagbs.com",
     address: "Los Angeles, USA",
@@ -16,7 +16,7 @@ const contacts = [
     phone: "+91 9663546561",
     phoneHref: "tel:+919663546561",
     email: "vijay@qagbs.com",
-    address: "Bengaluru, India",
+    address: "No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053",
   },
   {
     name: "Mr. Srikanteswara M R",
@@ -24,7 +24,7 @@ const contacts = [
     phone: "+91 9535734505",
     phoneHref: "tel:+919535734505",
     email: "sri@qagbs.com",
-    address: "Bengaluru, India",
+    address: "No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053",
   },
 ];
 
