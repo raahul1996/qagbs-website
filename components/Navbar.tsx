@@ -13,9 +13,11 @@ const tabs = [
 export default function Navbar() {
   const [active, setActive] = useState("home");
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
+      setScrolled(window.scrollY > 80);
       let current = "home";
       for (const { id } of tabs) {
         const el = document.getElementById(id);
@@ -37,20 +39,24 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0d2240] shadow-lg">
       {/* Desktop: two-row layout */}
       <div className="hidden md:block">
-        {/* Row 1: Logo + Company name (full height) */}
-        <div className="flex items-center gap-6 px-8 py-6 border-b border-white/10">
-          <button onClick={() => scrollTo("home")} className="flex items-center gap-6 focus:outline-none flex-shrink-0">
-            <Image
-              src="/logo.jpeg"
-              alt="QAGBS Logo"
-              width={160}
-              height={160}
-              className="rounded-full object-contain"
-            />
-            <div className="text-white font-extrabold text-4xl leading-tight tracking-widest uppercase whitespace-nowrap">
-              Quick Acuity Global Business Solutions
-            </div>
-          </button>
+        {/* Row 1: Logo + Company name (collapses on scroll) */}
+        <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+          scrolled ? "max-h-0 opacity-0" : "max-h-[200px] opacity-100"
+        }`}>
+          <div className="flex items-center gap-6 px-8 py-6 border-b border-white/10">
+            <button onClick={() => scrollTo("home")} className="flex items-center gap-6 focus:outline-none flex-shrink-0">
+              <Image
+                src="/logo.jpeg"
+                alt="QAGBS Logo"
+                width={160}
+                height={160}
+                className="rounded-full object-contain"
+              />
+              <div className="text-white font-extrabold text-4xl leading-tight tracking-widest uppercase whitespace-nowrap">
+                Quick Acuity Global Business Solutions
+              </div>
+            </button>
+          </div>
         </div>
 
         {/* Row 2: Nav tabs (centered) */}
