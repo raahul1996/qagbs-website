@@ -47,7 +47,7 @@ export default function Navbar() {
               height={160}
               className="rounded-full object-contain"
             />
-            <div className="text-white font-extrabold text-4xl leading-tight tracking-widest uppercase max-w-2xl">
+            <div className="text-white font-extrabold text-4xl leading-tight tracking-widest uppercase whitespace-nowrap">
               Quick Acuity Global Business Solutions
             </div>
           </button>
