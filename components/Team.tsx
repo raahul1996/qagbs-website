@@ -58,7 +58,7 @@ In recent years, He has embraced the challenge of working within dynamic startup
 His educational, ethical background is a cornerstone with which he peaked the professional identity.`,
     expertise: ["ERP Implementation (Oracle)", "Direct & Indirect Tax", "Transfer Pricing & FEMA", "Working Capital Management", "Internal Controls & SOPs"],
     linkedin: "https://www.linkedin.com/in/vijayakumar-sowrirajalu-b7078536/",
-    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053" },
+    contact: { phone: "+91 9663546561", email: "vijay@qagbs.com", location: "Bengaluru, Karnataka, India" },
   },
   {
     name: "Mr. Srikanteswara M R",
@@ -85,7 +85,7 @@ He is known for his integrity, meticulous attention to detail, and a collaborati
 Under his leadership, the firm is anchored in the philosophy of delivering precision-driven, insight-led, and globally aligned financial and advisory solutions to clients across borders.`,
     expertise: ["Internal Audit (IFRS)", "Cost & Project Accounting", "M&A & Due Diligence", "Capital Budgeting", "Subsidiary & JV Structuring"],
     linkedin: "https://www.linkedin.com/in/srikanteswara-m-r-1295601a/",
-    contact: { phone: "+91 9535734505", email: "sri@qagbs.com", location: "No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053" },
+    contact: { phone: "+91 9535734505", email: "sri@qagbs.com", location: "Bengaluru, Karnataka, India" },
   },
 ];
 

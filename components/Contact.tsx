@@ -16,7 +16,7 @@ const contacts = [
     phone: "+91 9663546561",
     phoneHref: "tel:+919663546561",
     email: "vijay@qagbs.com",
-    address: "No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053",
+    address: "Bengaluru, Karnataka, India",
   },
   {
     name: "Mr. Srikanteswara M R",
@@ -24,7 +24,7 @@ const contacts = [
     phone: "+91 9535734505",
     phoneHref: "tel:+919535734505",
     email: "sri@qagbs.com",
-    address: "No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053",
+    address: "Bengaluru, Karnataka, India",
   },
 ];
 
