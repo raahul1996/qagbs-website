@@ -35,24 +35,26 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0d2240] shadow-lg">
-      {/* Desktop: single-row horizontal layout */}
-      <div className="hidden md:flex md:items-center md:justify-between px-6 py-3 gap-6">
-        {/* Left: Logo + Company name */}
-        <button onClick={() => scrollTo("home")} className="flex items-center gap-4 focus:outline-none">
-          <Image
-            src="/logo.jpeg"
-            alt="QAGBS Logo"
-            width={112}
-            height={112}
-            className="rounded-full object-contain flex-shrink-0"
-          />
-          <div className="text-white font-extrabold text-lg leading-tight tracking-widest uppercase">
-            Quick Acuity Global Business Solutions
-          </div>
-        </button>
+      {/* Desktop: two-row layout */}
+      <div className="hidden md:block">
+        {/* Row 1: Logo + Company name (left-aligned) */}
+        <div className="flex items-center gap-4 px-6 py-3 border-b border-white/10">
+          <button onClick={() => scrollTo("home")} className="flex items-center gap-4 focus:outline-none flex-shrink-0">
+            <Image
+              src="/logo.jpeg"
+              alt="QAGBS Logo"
+              width={112}
+              height={112}
+              className="rounded-full object-contain"
+            />
+            <div className="text-white font-extrabold text-lg leading-tight tracking-widest uppercase">
+              Quick Acuity Global Business Solutions
+            </div>
+          </button>
+        </div>
 
-        {/* Right: Nav tabs + Get in Touch */}
-        <div className="flex items-center gap-1">
+        {/* Row 2: Nav tabs (centered) */}
+        <div className="flex items-center justify-center gap-1 py-2 px-6">
           {tabs.map((tab) => (
             <button
               key={tab.id}
