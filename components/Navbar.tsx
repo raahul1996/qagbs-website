@@ -48,11 +48,11 @@ export default function Navbar() {
               <Image
                 src="/logo.jpeg"
                 alt="QAGBS Logo"
-                width={160}
-                height={160}
+                width={140}
+                height={140}
                 className="rounded-full object-contain"
               />
-              <div className="text-white font-extrabold text-4xl leading-tight tracking-widest uppercase whitespace-nowrap">
+              <div className="text-white font-extrabold text-2xl leading-tight tracking-widest uppercase whitespace-nowrap">
                 Quick Acuity Global Business Solutions
               </div>
             </button>
