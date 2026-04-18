@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 pt-52">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 pt-80">
         <p className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1a56db] leading-tight tracking-tight mb-4 whitespace-nowrap">
           Quick Acuity Global Business Solutions
         </p>
