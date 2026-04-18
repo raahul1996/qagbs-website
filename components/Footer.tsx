@@ -60,7 +60,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-white font-medium mb-0.5">India</div>
-                <div className="text-blue-400">No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bangalore, Karnataka, India 560053</div>
+                <div className="text-blue-400">No 90, 2nd Floor, Lakshman Rao Road, Balepet Cross, Bengaluru, Karnataka, India 560053</div>
               </div>
             </div>
           </div>
