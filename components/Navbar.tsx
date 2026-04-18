@@ -37,17 +37,17 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0d2240] shadow-lg">
       {/* Desktop: two-row layout */}
       <div className="hidden md:block">
-        {/* Row 1: Logo + Company name (left-aligned) */}
-        <div className="flex items-center gap-4 px-6 py-3 border-b border-white/10">
-          <button onClick={() => scrollTo("home")} className="flex items-center gap-4 focus:outline-none flex-shrink-0">
+        {/* Row 1: Logo + Company name (full height) */}
+        <div className="flex items-center gap-6 px-8 py-6 border-b border-white/10">
+          <button onClick={() => scrollTo("home")} className="flex items-center gap-6 focus:outline-none flex-shrink-0">
             <Image
               src="/logo.jpeg"
               alt="QAGBS Logo"
-              width={140}
-              height={140}
+              width={160}
+              height={160}
               className="rounded-full object-contain"
             />
-            <div className="text-white font-extrabold text-2xl leading-tight tracking-widest uppercase">
+            <div className="text-white font-extrabold text-4xl leading-tight tracking-widest uppercase max-w-2xl">
               Quick Acuity Global Business Solutions
             </div>
           </button>
