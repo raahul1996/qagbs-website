@@ -128,39 +128,6 @@ export default function Team() {
         </div>
       </div>
 
-      {/* Leadership at work */}
-      <div className="py-20 bg-[#f8faff]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <p className="text-[#1a56db] text-sm font-semibold uppercase tracking-widest mb-4">Leadership in Action</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2240] leading-tight">
-              At the Helm
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {[
-              { photo: "/team/vijay-kumar-office.jpg", name: "Mr. S. Vijayakumar", role: "Co-Founder" },
-              { photo: "/team/srikanteswara-office.jpg", name: "Mr. Srikanteswara M R", role: "Co-Founder" },
-            ].map((person) => (
-              <div key={person.name} className="relative aspect-[3/2] rounded-2xl overflow-hidden shadow-sm">
-                <Image
-                  src={person.photo}
-                  alt={`${person.name} at work`}
-                  fill
-                  className="object-cover object-center"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d2240]/85 via-[#0d2240]/10 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
-                  <p className="text-white font-bold text-lg leading-snug">{person.name}</p>
-                  <p className="text-blue-200 text-sm font-semibold">{person.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Profile cards */}
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
