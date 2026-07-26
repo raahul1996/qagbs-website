@@ -6,8 +6,8 @@ export default function Hero() {
       {/* Background image — light library/office */}
       <div className="absolute inset-0 overflow-hidden">
         <Image
-          src="/hero-bg.jpg"
-          alt="Professional office with books"
+          src="/hero-bg-office.jpg"
+          alt="Modern corporate office with city skyline"
           fill
           className="object-cover object-center"
           priority
@@ -18,12 +18,11 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 pt-80">
-        <p className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1a56db] leading-tight tracking-tight mb-4 whitespace-nowrap">
-          Quick Acuity Global Business Solutions
-        </p>
-
         {/* Tagline — each phrase on its own line */}
         <div className="mb-8 space-y-1">
+          <p className="text-2xl sm:text-3xl md:text-4xl font-black text-[#1a56db] leading-none tracking-tight">
+            Trust
+          </p>
           <p className="text-2xl sm:text-3xl md:text-4xl font-black text-[#0d2240] leading-none tracking-tight">
             Precision
           </p>
