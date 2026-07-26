@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="home" className="flex flex-col">
+    <section id="home" className="flex flex-col pt-20 md:pt-[230px] bg-[#0d2240]">
       {/* Founders photo — full width */}
       <div className="relative w-full aspect-[16/7] sm:aspect-[16/6]">
         <Image
