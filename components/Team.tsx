@@ -84,7 +84,7 @@ He is known for his integrity, meticulous attention to detail, and a collaborati
 
 Under his leadership, the firm is anchored in the philosophy of delivering precision-driven, insight-led, and globally aligned financial and advisory solutions to clients across borders.`,
     expertise: ["Internal Audit (IFRS)", "Cost & Project Accounting", "M&A & Due Diligence", "Capital Budgeting", "Subsidiary & JV Structuring"],
-    linkedin: "https://www.linkedin.com/in/srikanteswara-m-r-1295601a/",
+    linkedin: "https://www.linkedin.com/in/srikanteswara-madure-ramachandrarao-srikanteswara-m-r-06051b415/",
     contact: { phone: "+91 9535734505", email: "sri@qagbs.com", location: "Bengaluru, Karnataka, India" },
   },
 ];
